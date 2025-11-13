@@ -1,0 +1,849 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="6" y="-6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Dallas_2021-2022.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Restaurant Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Inspection Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Inspection Date" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Inspection Score" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Street Number" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Street Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Street Direction" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Street Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Street Unit" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Street Address" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Zip Code" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation  Memo - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Description - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Points - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Detail - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Violation Memo - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Inspection Month" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Inspection Year" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="Lat Long Location" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="6" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Dallas_2022-2023.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Restaurant Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Inspection Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Inspection Date" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Inspection Score" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Street Number" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Street Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Street Direction" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Street Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Street Unit" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Street Address" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Zip Code" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation  Memo - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Description - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Points - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Detail - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Violation Memo - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Inspection Month" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Inspection Year" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="Lat Long Location" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="6" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Dallas_2023-2024.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Restaurant Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Inspection Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Inspection Date" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Inspection Score" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Street Number" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Street Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Street Direction" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Street Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Street Unit" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Street Address" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Zip Code" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation  Memo - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Description - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Points - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Detail - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Violation Memo - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Inspection Month" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Inspection Year" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="Lat Long Location" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="6" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Dallas_2024-2025.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Restaurant Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Inspection Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Inspection Date" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Inspection Score" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Street Number" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Street Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Street Direction" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Street Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Street Unit" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Street Address" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Zip Code" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation  Memo - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Description - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Points - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Detail - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Violation Memo - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Inspection Month" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Inspection Year" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="Lat Long Location" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="6" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Dallas_2025-partyear.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Restaurant Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Inspection Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Inspection Date" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Inspection Score" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Street Number" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Street Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Street Direction" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Street Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Street Unit" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Street Address" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Zip Code" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 1" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 2" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 3" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 4" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 5" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 6" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 7" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 8" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 9" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 10" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 11" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 12" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 13" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 14" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 15" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 16" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 17" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 18" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 19" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation  Memo - 20" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 21" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 22" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 23" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 24" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Description - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Points - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Detail - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Violation Memo - 25" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Inspection Month" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Inspection Year" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="Lat Long Location" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="186" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#1">
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#5">
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Dallas_dataflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="13e15252-b1d3-4922-8520-2ee080e1a206" />
+      <Telemetry>
+        <PreviousWorkflowId value="d0f7ba31-5691-4438-81c4-269f95e5572f" />
+        <OriginWorkflowId value="d0f7ba31-5691-4438-81c4-269f95e5572f" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,364 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="6" y="-6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="True" FileFormat="0" OutputFileName="FileName">C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Chicago_2021-2022.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Inspection ID" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="DBA Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="AKA Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="License #" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Facility Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Risk" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Zip" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Inspection Date" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Inspection Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Results" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Violations" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Latitude" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Longitude" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Location" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="6" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Chicago_2022-2023.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Inspection ID" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="DBA Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="AKA Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="License #" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Facility Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Risk" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Zip" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Inspection Date" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Inspection Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Results" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Violations" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Latitude" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Longitude" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Location" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="6" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Chicago_2023-2024.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Inspection ID" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="DBA Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="AKA Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="License #" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Facility Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Risk" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Zip" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Inspection Date" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Inspection Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Results" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Violations" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Latitude" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Longitude" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Location" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="6" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Chicago_2024-2025.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Inspection ID" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="DBA Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="AKA Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="License #" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Facility Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Risk" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Zip" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Inspection Date" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Inspection Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Results" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Violations" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Latitude" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Longitude" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Location" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="6" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Chicago_2025-partyear.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Inspection ID" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="DBA Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="AKA Name" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="License #" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Facility Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Risk" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Zip" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Inspection Date" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Inspection Type" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Results" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Violations" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Latitude" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Longitude" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Location" size="254" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="222" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#1">
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#5">
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Chicago_dataflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="7ca24900-9f86-4df0-ae2b-a9ca4573964d" />
+      <Telemetry>
+        <PreviousWorkflowId value="40586b18-755a-4b1a-a073-04e58653e063" />
+        <OriginWorkflowId value="40586b18-755a-4b1a-a073-04e58653e063" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
