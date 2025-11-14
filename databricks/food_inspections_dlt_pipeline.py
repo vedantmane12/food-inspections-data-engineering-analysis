@@ -1,4 +1,39 @@
 # Databricks notebook source
+# MAGIC %md
+# MAGIC # Food Inspections DLT Pipeline
+# MAGIC ## End-to-End Data Engineering Project - Chicago & Dallas
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ## Project Overview
+# MAGIC
+# MAGIC This notebook implements a complete **Medallion Architecture** using Delta Live Tables (DLT) for food inspection data from Chicago and Dallas.
+# MAGIC
+# MAGIC ### Data Flow Architecture
+# MAGIC
+# MAGIC Source CSV → Bronze (Raw) → Silver (Validated) → Gold (Dimensional Model)
+# MAGIC
+# MAGIC ### Key Features
+# MAGIC - ✅ **Streaming processing** with Change Data Feed (CDF)
+# MAGIC - ✅ **Data quality expectations** with validation rules
+# MAGIC - ✅ **SCD Type 2** implementation for dim_restaurant
+# MAGIC - ✅ **Star schema** with fact and bridge tables
+# MAGIC - ✅ **Unified dataset** from two cities with different schemas
+# MAGIC
+# MAGIC ### Pipeline Layers
+# MAGIC
+# MAGIC 1. **Bronze Zone:** Raw data ingestion (361K records)
+# MAGIC 2. **Silver Zone:** Data quality validation (315K records, 87% pass rate)
+# MAGIC 3. **Gold Zone:** Dimensional model (9 dimensions, 1 fact, 1 bridge)
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ## Importing Libraries
+
+# COMMAND ----------
+
 # Importing Libraries
 import dlt
 from pyspark import pipelines as dp
@@ -8,8 +43,40 @@ from pyspark.sql.window import Window
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC ### Setting up the environment
+
+# COMMAND ----------
+
 spark.sql("USE CATALOG `workspace`")
 spark.sql("USE SCHEMA `fi_dc_schema`")
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC # Bronze Zone - Raw Landing Layer
+# MAGIC
+# MAGIC ## Purpose
+# MAGIC Ingest raw data from the source table with minimal transformation, preserving data exactly as received from Alteryx ETL process.
+# MAGIC
+# MAGIC ## Characteristics
+# MAGIC - **Data Quality:** No validation or cleansing
+# MAGIC - **Grain:** One row per violation (violation-level detail)
+# MAGIC - **Processing:** Streaming with Change Data Feed (CDF)
+# MAGIC - **Source:** `workspace.fi_dc_schema.source_food_inspections_data`
+# MAGIC - **Target:** `bronze_food_inspections`
+# MAGIC
+# MAGIC ## Change Data Feed (CDF)
+# MAGIC CDF is enabled to capture:
+# MAGIC - **Inserts:** New inspection records
+# MAGIC - **Updates:** Modified inspection data
+# MAGIC - **Deletes:** Removed records
+# MAGIC - **Metadata:** `_commit_timestamp`, `_commit_version`, `_change_type`
+# MAGIC
+# MAGIC ## Metadata Columns Added
+# MAGIC - `bronze_load_timestamp`: When record was loaded to Bronze
+# MAGIC - `bronze_load_date`: Date of load (for potential partitioning)
+# MAGIC - `source_system`: Identifier of source system ("Alteryx_ETL")
 
 # COMMAND ----------
 
@@ -32,6 +99,42 @@ def bronze_food_inspections():
             .withColumn("bronze_load_date", current_date()) \
             .withColumn("source_system", lit("Alteryx_ETL")) 
     )
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC # Silver Zone - Cleansed and Validated Layer
+# MAGIC
+# MAGIC ## Purpose
+# MAGIC Apply comprehensive data quality rules and business validations to ensure only high-quality data proceeds to the Gold zone.
+# MAGIC
+# MAGIC ## Data Quality Framework
+# MAGIC
+# MAGIC ### Validation Strategy
+# MAGIC Uses **DLT Expectations** - a declarative framework for data quality:
+# MAGIC - `@dlt.expect_all`: **WARN** - Log violations but allow records through
+# MAGIC - `@dlt.expect_or_drop`: **DROP** - Reject records that violate critical rules
+# MAGIC
+# MAGIC ### Rule 1-4: Field Completeness (WARN)
+# MAGIC - ✅ Restaurant name cannot be NULL
+# MAGIC - ✅ Inspection date cannot be NULL  
+# MAGIC - ✅ Inspection type cannot be NULL
+# MAGIC - ✅ Zip codes must be 4-5 digits
+# MAGIC
+# MAGIC ### Rule 5: Chicago-Specific (DROP)
+# MAGIC - ✅ Chicago inspection results cannot be NULL
+# MAGIC
+# MAGIC ### Rule 6: Dallas-Specific (DROP)
+# MAGIC - ✅ Dallas violation scores cannot exceed 100
+# MAGIC
+# MAGIC ### Rule 7: Cross-Dataset (DROP)
+# MAGIC - ✅ Every inspection must have at least 1 unique violation
+# MAGIC
+# MAGIC ### Rule 8: Dallas Business Rule (DROP)
+# MAGIC - ✅ If violation score ≥90, cannot have >3 violations
+# MAGIC
+# MAGIC ### Rule 9: Dallas Business Rule (DROP)
+# MAGIC - ✅ Inspection result cannot be PASS if violations contain Urgent/Critical terms
 
 # COMMAND ----------
 
@@ -82,6 +185,27 @@ def silver_food_inspections():
         dlt.read_stream("bronze_food_inspections")
         .withColumn("silver_load_timestamp", current_timestamp())
     )
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC # Silver Transformed - Type Conversion Layer
+# MAGIC
+# MAGIC ## Purpose
+# MAGIC Convert string fields from Silver layer to proper data types for efficient analytical processing in Gold zone.
+# MAGIC
+# MAGIC ## Why Separate Layer?
+# MAGIC
+# MAGIC ### Separation of Concerns
+# MAGIC 1. **Silver (Validation):** Expectations work best on string fields
+# MAGIC 2. **Silver Transformed (Transformation):** Type conversion after validation
+# MAGIC 3. **Gold (Dimensional Model):** Consumes properly typed data
+# MAGIC
+# MAGIC ### Benefits
+# MAGIC - Easier to write validation rules on strings
+# MAGIC - Cleaner Gold zone code (no type casting needed)
+# MAGIC - Better query performance with proper types
+# MAGIC - Follows best practices for data pipeline design
 
 # COMMAND ----------
 
@@ -156,9 +280,115 @@ def silver_food_inspections_typed():
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC # Enable Change Data Feed on Silver Transformed
+# MAGIC
+# MAGIC ## Purpose
+# MAGIC Enable Change Data Feed (CDF) on the Silver Transformed table to support SCD Type 2 implementation in `dim_restaurant`.
+# MAGIC
+# MAGIC ## What is Change Data Feed?
+# MAGIC
+# MAGIC CDF is a Delta Lake feature that captures row-level changes:
+# MAGIC - **Inserts:** New records added
+# MAGIC - **Updates:** Existing records modified
+# MAGIC - **Deletes:** Records removed
+# MAGIC
+# MAGIC ### Metadata Captured
+# MAGIC - `_commit_timestamp`: When change was committed
+# MAGIC - `_commit_version`: Delta table version number
+# MAGIC - `_change_type`: Type of operation (insert/update/delete)
+# MAGIC
+# MAGIC ## Why Needed for SCD Type 2?
+# MAGIC
+# MAGIC The `dlt.apply_changes()` function uses CDF to:
+# MAGIC 1. **Detect attribute changes** in restaurant records
+# MAGIC 2. **Create new versions** when SCD attributes change
+# MAGIC 3. **Set __START_AT and __END_AT** timestamps automatically
+# MAGIC 4. **Maintain complete history** of all versions
+# MAGIC
+# MAGIC ## When to Run
+# MAGIC - Execute **once** after Silver Transformed table is first created
+# MAGIC - CDF is persistent (remains enabled until explicitly disabled)
+# MAGIC - Required before running SCD Type 2 implementation
+# MAGIC
+
+# COMMAND ----------
+
 # MAGIC %sql
 # MAGIC ALTER TABLE workspace.fi_dc_schema.silver_food_inspections_transformed
 # MAGIC SET TBLPROPERTIES (delta.enableChangeDataFeed = true);
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ---
+# MAGIC
+# MAGIC # Gold Zone - Dimensional Model
+# MAGIC
+# MAGIC ## Star Schema Design
+# MAGIC
+# MAGIC ### Fact Table
+# MAGIC - `fact_food_inspections`: Inspection-level facts
+# MAGIC
+# MAGIC ### Dimension Tables
+# MAGIC 1. `dim_date`: Calendar dimension (2018-2028)
+# MAGIC 2. `dim_location`: Geographic locations
+# MAGIC 3. `dim_violation`: Violation codes (Chicago + Dallas)
+# MAGIC 4. `dim_inspection_type`: Types of inspections
+# MAGIC 5. `dim_inspection_result`: Inspection outcomes
+# MAGIC 6. `dim_risk_category`: Risk levels (High/Medium/Low)
+# MAGIC 7. `dim_restaurant`: Restaurants with SCD Type 2 ⭐
+# MAGIC
+# MAGIC ### Bridge Table
+# MAGIC - `bridge_inspection_violation`: Inspection-to-violation relationship (many-to-many)
+# MAGIC
+# MAGIC ---
+# MAGIC
+# MAGIC ## Dimension 1: dim_date
+# MAGIC
+# MAGIC ### Overview
+# MAGIC Complete calendar dimension covering 2018-2028, independent of actual inspection dates.
+# MAGIC
+# MAGIC ### Design Decisions
+# MAGIC
+# MAGIC **Why Independent Generation?**
+# MAGIC - Standard dimensional modeling practice
+# MAGIC - Enables analysis for dates with no inspections
+# MAGIC - Supports "no activity" insights (e.g., "no inspections on Sundays")
+# MAGIC - Reusable across multiple fact tables
+# MAGIC
+# MAGIC **Date Range: 2018-2028 (11 years)**
+# MAGIC - Covers historical data (2021-2025 actual inspections)
+# MAGIC - Allows pre-2021 historical loads if needed
+# MAGIC - Extends to 2028 for future planning
+# MAGIC
+# MAGIC ### Attributes Included
+# MAGIC
+# MAGIC **Calendar Hierarchy:**
+# MAGIC - Year, Quarter, Month, Week, Day
+# MAGIC - Full hierarchy for drill-down analysis
+# MAGIC
+# MAGIC **Display Names:**
+# MAGIC - Month names (January, Jan)
+# MAGIC - Day of week names (Monday, Mon)
+# MAGIC - Year-quarter (2021-Q2), Year-month (2021-04)
+# MAGIC
+# MAGIC **Business Flags:**
+# MAGIC - `is_weekend`: Saturday/Sunday indicator
+# MAGIC - `is_weekday`: Monday-Friday indicator
+# MAGIC
+# MAGIC **Fiscal Calendar:**
+# MAGIC - Fiscal year (Oct 1 start date)
+# MAGIC - Fiscal quarter (Q1: Oct-Dec, Q2: Jan-Mar, etc.)
+# MAGIC
+# MAGIC ### Primary Key
+# MAGIC - `date_key`: Integer in YYYYMMDD format (20210405)
+# MAGIC - Faster joins than DATE type
+# MAGIC - Human-readable and sortable
+# MAGIC
+# MAGIC ### Expected Output
+# MAGIC - **4,018 rows** (every day from 2018-01-01 to 2028-12-31)
+# MAGIC - **Type:** Materialized view (batch generation)
 
 # COMMAND ----------
 
@@ -275,6 +505,59 @@ def dim_date():
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC ---
+# MAGIC
+# MAGIC ## Dimension 2: dim_location
+# MAGIC
+# MAGIC ### Overview
+# MAGIC Geographic dimension capturing physical locations of food establishments from both Chicago and Dallas.
+# MAGIC
+# MAGIC ### Design Characteristics
+# MAGIC
+# MAGIC **Grain:** One row per unique physical address
+# MAGIC
+# MAGIC **Type:** Type 1 SCD (locations don't change - buildings stay put!)
+# MAGIC
+# MAGIC **Processing:** Streaming with hash-based deduplication
+# MAGIC
+# MAGIC ### Business Key Strategy
+# MAGIC
+# MAGIC **Composite Key Components:**
+# MAGIC - Address (street address)
+# MAGIC - City (chicago, dallas)
+# MAGIC - State (IL, TX)
+# MAGIC - Zip code (5-digit)
+# MAGIC
+# MAGIC **Hash Generation:**
+# MAGIC - MD5 hash of lowercased components
+# MAGIC - Case-insensitive matching (avoids duplicates from case variations)
+# MAGIC - Pipe-delimited concatenation
+# MAGIC
+# MAGIC ### Surrogate Key Generation
+# MAGIC
+# MAGIC **Method:** Hash-based deterministic key
+# MAGIC - Same location always gets same key
+# MAGIC - No dependency on load order
+# MAGIC - Works with streaming (no row_number needed)
+# MAGIC
+# MAGIC ### Geographic Attributes
+# MAGIC - **latitude, longitude:** DOUBLE precision coordinates
+# MAGIC - **location:** Combined "(lat, long)" format for mapping
+# MAGIC - Enables spatial analysis and map visualizations
+# MAGIC
+# MAGIC ### Expected Output
+# MAGIC - **~39,000 unique locations**
+# MAGIC - Represents distinct establishment addresses
+# MAGIC - Used for geographic analysis in dashboards
+# MAGIC
+# MAGIC ### Power BI Integration
+# MAGIC - Join fact table on `location_business_key`
+# MAGIC - Map visualizations using lat/long
+# MAGIC - Filter by city, state, zip code
+
+# COMMAND ----------
+
 # GOLD ZONE - Dimension: Location (Streaming)
 # Purpose: Geographic location information from both cities
 # Type: Type 1 SCD (streaming updates)
@@ -336,6 +619,55 @@ def dim_location():
             # "source_city"
         )
     )
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ---
+# MAGIC
+# MAGIC ## Dimension 3: dim_violation
+# MAGIC
+# MAGIC ### Overview
+# MAGIC Unified violation code dimension storing violation definitions from **BOTH Chicago and Dallas**.
+# MAGIC
+# MAGIC ### Critical Design Decision
+# MAGIC
+# MAGIC **Problem:** Both cities use overlapping violation codes with different meanings
+# MAGIC
+# MAGIC | City | Code | Description |
+# MAGIC |------|------|-------------|
+# MAGIC | Chicago | 1 | NO EMPLOYEE HEALTH POLICY |
+# MAGIC | Dallas | 1 | IMPROPER FOOD STORAGE |
+# MAGIC
+# MAGIC **Solution:** Include `city` in business key to distinguish them
+# MAGIC ```
+# MAGIC violation_key: 100001, code: "1", description: "NO HEALTH POLICY", city: "chicago"
+# MAGIC violation_key: 200001, code: "1", description: "IMPROPER STORAGE", city: "dallas"
+# MAGIC ```
+# MAGIC
+# MAGIC ### Assignment Requirement Compliance
+# MAGIC
+# MAGIC **Requirement:** *"Dallas violations codes and Chicago violation codes don't need to match however, create a dim that stores both sets"*
+# MAGIC
+# MAGIC **Implementation:**
+# MAGIC - ✅ Stores both Chicago and Dallas codes in one dimension
+# MAGIC - ✅ Codes don't need to match (handled by city attribute)
+# MAGIC - ✅ Business key = violation_code + city (ensures uniqueness)
+# MAGIC - ✅ Separate surrogate keys for each city's code "1"
+# MAGIC
+# MAGIC ### Violation Categorization
+# MAGIC
+# MAGIC **Derived Categories:**
+# MAGIC - **Food Safety - Critical:** Immediate health hazards
+# MAGIC - **Food Safety - Urgent/Serious:** Significant concerns
+# MAGIC - **Sanitation - Moderate:** Cleanliness issues
+# MAGIC - **General Compliance:** Minor infractions
+# MAGIC
+# MAGIC **is_critical Flag:**
+# MAGIC - TRUE for Critical and Urgent violations
+# MAGIC - Used for filtering in dashboards
+# MAGIC
+# MAGIC
 
 # COMMAND ----------
 
@@ -409,6 +741,39 @@ def dim_violation():
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC ---
+# MAGIC
+# MAGIC ## Dimension 4: dim_inspection_type
+# MAGIC
+# MAGIC ### Overview
+# MAGIC Dimension capturing the various types of food safety inspections conducted.
+# MAGIC
+# MAGIC ### Inspection Types
+# MAGIC
+# MAGIC **Common Types:**
+# MAGIC - **Routine:** Regularly scheduled inspections
+# MAGIC - **Follow-up:** Re-inspections after violations
+# MAGIC - **Complaint:** Triggered by public complaints
+# MAGIC - **Re-Inspection:** Additional verification checks
+# MAGIC
+# MAGIC ### Derived Categorization
+# MAGIC
+# MAGIC **inspection_category:** Standardized grouping
+# MAGIC
+# MAGIC Maps various type names to standard categories using keyword matching:
+# MAGIC - Contains "routine" → "Routine"
+# MAGIC - Contains "follow" → "Follow-up"
+# MAGIC - Contains "complaint" → "Complaint"
+# MAGIC - Contains "re-inspection" → "Re-Inspection"
+# MAGIC - Otherwise → "Other"
+# MAGIC
+# MAGIC ### Business Key
+# MAGIC - **Composite:** inspection_type + city
+# MAGIC - **Why city?** Different jurisdictions may have different type names
+
+# COMMAND ----------
+
 # GOLD ZONE - Dimension: Inspection Type
 # Purpose: Types of inspections (Routine, Follow-up, Complaint, etc.)
 # Type: Type 1 SCD (streaming)
@@ -461,6 +826,46 @@ def dim_inspection_type():
             # "source_city"
         )
     )
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ---
+# MAGIC
+# MAGIC ## Dimension 5: dim_inspection_result
+# MAGIC
+# MAGIC ### Overview
+# MAGIC Dimension defining inspection outcomes and results.
+# MAGIC
+# MAGIC ### Result Types
+# MAGIC
+# MAGIC **Primary Results:**
+# MAGIC - **PASS:** Inspection passed all requirements
+# MAGIC - **PASS_CONDITIONS:** Passed with conditions to address
+# MAGIC - **FAIL:** Failed inspection, requires corrective action
+# MAGIC - **NO_ENTRY:** Facility not accessible
+# MAGIC - **OUT_OF_BUSINESS:** Establishment closed
+# MAGIC - **NOT_LOCATED:** Facility not found
+# MAGIC
+# MAGIC ### Chicago Scoring System (Reference)
+# MAGIC
+# MAGIC Result is derived from inspection score:
+# MAGIC
+# MAGIC | Result | Score Range | Meaning |
+# MAGIC |--------|-------------|---------|
+# MAGIC | PASS | 90-100 | Compliant |
+# MAGIC | PASS_CONDITIONS | 70-89 | Minor issues |
+# MAGIC | FAIL | 0-69 | Significant violations |
+# MAGIC | NO_ENTRY | 0 | Unable to inspect |
+# MAGIC
+# MAGIC ### Attributes
+# MAGIC
+# MAGIC **result_category:** Simplified grouping
+# MAGIC - Pass (includes PASS and PASS_CONDITIONS)
+# MAGIC - Fail
+# MAGIC - Other
+# MAGIC
+# MAGIC **score_range_min/max:** Reference score ranges for Chicago
 
 # COMMAND ----------
 
@@ -526,6 +931,48 @@ def dim_inspection_result():
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC ---
+# MAGIC
+# MAGIC ## Dimension 6: dim_risk_category
+# MAGIC
+# MAGIC ### Overview
+# MAGIC Standardized risk level dimension - simplified from source variations.
+# MAGIC
+# MAGIC ### Design: Consolidation Strategy
+# MAGIC
+# MAGIC **Source Data Variations (~40 different values):**
+# MAGIC - "Risk 1 (High)", "Risk 1", "High Risk", "HIGH"
+# MAGIC - "Risk 2 (Medium)", "Risk 2", "Medium Risk", "MEDIUM"
+# MAGIC - "Risk 3 (Low)", "Risk 3", "Low Risk", "LOW"
+# MAGIC
+# MAGIC **Dimensional Model (3-4 standardized values):**
+# MAGIC - High
+# MAGIC - Medium
+# MAGIC - Low
+# MAGIC - Unknown
+# MAGIC
+# MAGIC ### Derivation Logic
+# MAGIC
+# MAGIC Maps source variations using keyword matching:
+# MAGIC ```
+# MAGIC Contains "high" OR "1" → "High" (priority: 1)
+# MAGIC Contains "medium" OR "2" → "Medium" (priority: 2)
+# MAGIC Contains "low" OR "3" → "Low" (priority: 3)
+# MAGIC Otherwise → "Unknown" (priority: 99)
+# MAGIC ```
+# MAGIC
+# MAGIC ### Priority Level
+# MAGIC
+# MAGIC **Purpose:** Sorting and filtering by risk importance
+# MAGIC
+# MAGIC - **1 = High Risk:** Most frequent inspections required
+# MAGIC - **2 = Medium Risk:** Moderate inspection frequency
+# MAGIC - **3 = Low Risk:** Less frequent inspections
+# MAGIC - **99 = Unknown:** Unclassified risk
+
+# COMMAND ----------
+
 # GOLD ZONE - Dimension: Risk Category
 # Purpose: Risk levels (High, Medium, Low) with priority
 # Type: Type 1 SCD (streaming)
@@ -583,6 +1030,94 @@ def dim_risk_category():
             "priority_level"
         )
     )
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ---
+# MAGIC
+# MAGIC ## Dimension 7: dim_restaurant (SCD Type 2) ⭐
+# MAGIC
+# MAGIC ### Overview
+# MAGIC Restaurant/establishment dimension with **Slowly Changing Dimension Type 2** implementation to track historical attribute changes.
+# MAGIC
+# MAGIC ## What is SCD Type 2?
+# MAGIC
+# MAGIC **Purpose:** Track historical changes to dimension attributes over time
+# MAGIC
+# MAGIC **How it works:**
+# MAGIC - When an attribute changes, create a **new version** of the record
+# MAGIC - Keep **old version** with expiration date
+# MAGIC - Mark **current version** with is_current=TRUE
+# MAGIC - Maintains **complete history** of all changes
+# MAGIC
+# MAGIC ## Why dim_restaurant for SCD Type 2?
+# MAGIC
+# MAGIC ### Attributes That Change Over Time
+# MAGIC
+# MAGIC 1. **dba_name (Restaurant Name)**
+# MAGIC    - Changes with ownership transfers
+# MAGIC    - Rebranding of establishments
+# MAGIC    - Business name updates
+# MAGIC
+# MAGIC 2. **facility_type**
+# MAGIC    - Restaurant → Grocery Store conversion
+# MAGIC    - Business model changes
+# MAGIC    - License type modifications
+# MAGIC
+# MAGIC 3. **risk_category**
+# MAGIC    - Improves after good inspections (Risk 1 → Risk 2)
+# MAGIC    - Degrades after violations (Risk 2 → Risk 1)
+# MAGIC    - Reflects inspection performance trends
+# MAGIC
+# MAGIC ### Business Value
+# MAGIC
+# MAGIC **Historical Analysis:**
+# MAGIC - "What was this restaurant's risk category in 2022?"
+# MAGIC - "How many times has this establishment changed ownership?"
+# MAGIC - "Track risk improvement after management changes"
+# MAGIC
+# MAGIC **Compliance Tracking:**
+# MAGIC - Monitor risk progression over time
+# MAGIC - Identify establishments improving/declining
+# MAGIC - Historical context for current status
+# MAGIC
+# MAGIC ## SCD Type 2 Implementation
+# MAGIC
+# MAGIC ### Multi-Step Process
+# MAGIC
+# MAGIC **Step 1:** Staging view (`dim_restaurant_scd2_stage`)
+# MAGIC - Prepares distinct restaurant snapshots
+# MAGIC - No aggregation (avoids streaming watermark issues)
+# MAGIC - Uses dropDuplicates for deduplication
+# MAGIC
+# MAGIC **Step 2:** Apply changes (`gold_dim_restaurant_scd2`)
+# MAGIC - Databricks `apply_changes()` function
+# MAGIC - Automatic change detection
+# MAGIC - Creates __START_AT and __END_AT metadata
+# MAGIC
+# MAGIC **Step 3:** Transform view (`dim_restaurant_scd2_transformed`)
+# MAGIC - Extracts DLT internal columns
+# MAGIC - Renames to business-friendly names
+# MAGIC - Creates is_active flag
+# MAGIC
+# MAGIC **Step 4:** Final table (`dim_restaurant`)
+# MAGIC - Clean column names
+# MAGIC - Adds row_version for version numbering
+# MAGIC - Generates restaurant_key (surrogate PK)
+# MAGIC
+# MAGIC ### SCD Type 2 Columns
+# MAGIC
+# MAGIC | Column | Type | Purpose |
+# MAGIC |--------|------|---------|
+# MAGIC | restaurant_key | INT | Surrogate PK (unique per version) |
+# MAGIC | restaurant_id | STRING | Business key (same across versions) |
+# MAGIC | effective_date | DATE | When version became active |
+# MAGIC | expiration_date | DATE | When version expired (9999-12-31 if current) |
+# MAGIC | is_current | BOOLEAN | TRUE for current version only |
+# MAGIC | row_version | INT | Version number (1, 2, 3...) |
+# MAGIC
+# MAGIC
 
 # COMMAND ----------
 
@@ -726,6 +1261,61 @@ def dim_restaurant():
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC # Fact Table: fact_food_inspections
+# MAGIC
+# MAGIC ## Overview
+# MAGIC Central fact table storing inspection-level metrics and measurements.
+# MAGIC
+# MAGIC ## Fact Table Design
+# MAGIC
+# MAGIC ### Grain Definition
+# MAGIC **One row per inspection** (NOT per violation)
+# MAGIC
+# MAGIC **Why inspection-level?**
+# MAGIC - Inspections are the business events we're measuring
+# MAGIC - Violations are details (stored in bridge table)
+# MAGIC - Cleaner aggregations and analysis
+# MAGIC - Standard dimensional modeling practice
+# MAGIC
+# MAGIC ### Fact Table Components
+# MAGIC
+# MAGIC **Surrogate Keys:**
+# MAGIC - `inspection_key`: Unique identifier for each inspection
+# MAGIC
+# MAGIC **Foreign Keys (Dimension References):**
+# MAGIC - `restaurant_key` → dim_restaurant (current version)
+# MAGIC - `date_key` → dim_date
+# MAGIC - `location_key` → dim_location
+# MAGIC - `inspection_type_key` → dim_inspection_type
+# MAGIC - `inspection_result_key` → dim_inspection_result
+# MAGIC - `risk_category_key` → dim_risk_category
+# MAGIC
+# MAGIC **Measures (Numeric Facts for Aggregation):**
+# MAGIC - `violation_score`: Inspection score (0-100)
+# MAGIC - `violation_count`: Total number of violations
+# MAGIC - `critical_violation`: Count of critical violations
+# MAGIC - `urgent_violation`: Count of urgent violations
+# MAGIC
+# MAGIC **Degenerate Dimensions:**
+# MAGIC - `inspection_id`: Original inspection identifier
+# MAGIC - `license_number`: License number (convenience)
+# MAGIC - `city`: Source city
+# MAGIC
+# MAGIC ### Dimension Joins Strategy
+# MAGIC
+# MAGIC **Challenge:** Fact table (streaming) joining to Dimension tables (batch)
+# MAGIC
+# MAGIC **Solution:** Create business keys in fact, then join to dimensions using batch reads
+# MAGIC
+# MAGIC **Join Process:**
+# MAGIC 1. Create business keys (hashes) in fact data
+# MAGIC 2. Read dimension tables as batch (snapshot)
+# MAGIC 3. Join on business keys to get surrogate keys
+# MAGIC 4. Result: Fact table with proper foreign keys
+
+# COMMAND ----------
+
 # ============================================================================
 # GOLD ZONE - Fact: Food Inspections (With Dimension Joins)
 # Grain: One row per inspection
@@ -848,6 +1438,63 @@ def fact_food_inspections():
         "inspection_date",          # Actual inspection date
         "load_timestamp"            # ETL load time
     )
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC # Bridge Table: bridge_inspection_violation
+# MAGIC
+# MAGIC ## Overview
+# MAGIC Bridge table implementing many-to-many relationship between inspections and violations.
+# MAGIC
+# MAGIC ## Why a Bridge Table?
+# MAGIC
+# MAGIC ### The Many-to-Many Problem
+# MAGIC
+# MAGIC **One inspection has MANY violations:**
+# MAGIC - Inspection #2485006 has violations: 1, 2, 33 (3 violations)
+# MAGIC
+# MAGIC **One violation appears in MANY inspections:**
+# MAGIC - Violation code "1" appears in thousands of inspections
+# MAGIC
+# MAGIC **Solution:** Bridge table stores the relationship
+# MAGIC
+# MAGIC ### Bridge Table Pattern
+# MAGIC ```
+# MAGIC fact_food_inspections (inspection-level)
+# MAGIC     ↕ (many-to-many via bridge)
+# MAGIC bridge_inspection_violation (violation details)
+# MAGIC     ↕
+# MAGIC dim_violation (violation definitions)
+# MAGIC ```
+# MAGIC
+# MAGIC ### Grain Definition
+# MAGIC **One row per violation instance**
+# MAGIC
+# MAGIC - Each inspection-violation combination is one row
+# MAGIC - Captures violation-specific details
+# MAGIC - Links to both fact and dimension
+# MAGIC
+# MAGIC ### Bridge Table Attributes
+# MAGIC
+# MAGIC **Composite Primary Key:**
+# MAGIC - `inspection_key` + `violation_key`
+# MAGIC
+# MAGIC **Foreign Keys:**
+# MAGIC - `inspection_key` → fact_food_inspections
+# MAGIC - `violation_key` → dim_violation
+# MAGIC
+# MAGIC **Violation-Specific Attributes:**
+# MAGIC - `violation_sequence`: Order within inspection (1, 2, 3...)
+# MAGIC - `is_violation_critical`: Is THIS violation critical?
+# MAGIC - `is_violation_urgent`: Is THIS violation urgent?
+# MAGIC - `violation_score`: Points for THIS violation (Dallas only)
+# MAGIC
+# MAGIC **Convenience Attributes (Redundant but Useful):**
+# MAGIC - `violation_code`: Violation code (also in dim_violation)
+# MAGIC - `violation_description`: Description (also in dim_violation)
+# MAGIC - `violation_comments_original`: Inspector comments
+# MAGIC - `violation_severity`: Severity level
 
 # COMMAND ----------
 
