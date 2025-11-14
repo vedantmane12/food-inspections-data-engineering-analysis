@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="54" />
+        <Position x="54" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -27,9 +27,6 @@
           <DefaultAnnotationText>Dallas_2021-2022.tsv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Restaurant Name" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2021-2022.tsv" type="V_String" />
@@ -154,7 +151,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="114" />
+        <Position x="54" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -178,9 +175,6 @@
           <DefaultAnnotationText>Dallas_2022-2023.tsv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Restaurant Name" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2022-2023.tsv" type="V_String" />
@@ -305,7 +299,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="174" />
+        <Position x="54" y="186" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -329,9 +323,6 @@
           <DefaultAnnotationText>Dallas_2023-2024.tsv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Restaurant Name" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2023-2024.tsv" type="V_String" />
@@ -456,7 +447,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="246" />
+        <Position x="54" y="258" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -480,9 +471,6 @@
           <DefaultAnnotationText>Dallas_2024-2025.tsv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Restaurant Name" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2024-2025.tsv" type="V_String" />
@@ -607,7 +595,7 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="318" />
+        <Position x="54" y="330" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -631,9 +619,6 @@
           <DefaultAnnotationText>Dallas_2025-partyear.tsv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Restaurant Name" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Dallas_2025-partyear.tsv" type="V_String" />
@@ -758,7 +743,7 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="234" y="186" />
+        <Position x="234" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -777,7 +762,7 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DataCleansePro.DataCleansePro">
-        <Position x="330" y="186" />
+        <Position x="330" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -934,7 +919,7 @@
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.FieldInfo.FieldInfo">
-        <Position x="318" y="114" />
+        <Position x="318" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration />
@@ -948,7 +933,7 @@
     </Node>
     <Node ToolID="9">
       <GuiSettings>
-        <Position x="318" y="258" />
+        <Position x="318" y="270" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -969,11 +954,11 @@
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="426" y="114" />
+        <Position x="426" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MANSIK~1\AppData\Local\Temp\Alteryx\Engine_32728_1df92ffc8cb34135b8ddde9cf758cec2_\Engine_32728_75dbb7be6b91469bb7308b8bd2f62c98~.yxdb</TempFile>
+          <TempFile>C:\Users\MANSIK~1\AppData\Local\Temp\Alteryx\Engine_50152_d6380206deca46dd9dc823b4a9386dd3_\Engine_50152_9d45bd2c76ad4571bc17cfb6c2321033~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -997,7 +982,7 @@
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
-        <Position x="426" y="186" />
+        <Position x="426" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1148,7 +1133,7 @@
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="522" y="186" />
+        <Position x="534" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1170,7 +1155,7 @@ vio...</DefaultAnnotationText>
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="678" y="174" />
+        <Position x="546" y="258" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1234,7 +1219,7 @@ vio...</DefaultAnnotationText>
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="762" y="174" />
+        <Position x="762" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1254,7 +1239,7 @@ vio...</DefaultAnnotationText>
     </Node>
     <Node ToolID="19">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="846" y="174" />
+        <Position x="870" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1266,10 +1251,10 @@ vio...</DefaultAnnotationText>
             <FormulaField expression="DateTimeQuarter([inspection_date_std])" field="inspection_quarter" size="2" type="Int16" enabled="true" />
             <FormulaField expression="IF IsNull([Inspection Score]) THEN &quot;UNKNOWN&quot;&#xA;ELSEIF ToNumber([Inspection Score]) &gt;= 90 THEN &quot;PASS&quot;&#xA;ELSEIF ToNumber([Inspection Score]) &gt;= 70 THEN &quot;PASS_CONDITIONS&quot;&#xA;ELSEIF ToNumber([Inspection Score]) &lt; 70 THEN &quot;FAIL&quot;&#xA;ELSE &quot;UNKNOWN&quot;&#xA;ENDIF" field="results_std" size="50" type="V_String" enabled="true" />
             <FormulaField expression="ToString([violation_number])" field="violation_code" size="50" type="V_String" enabled="true" />
-            <FormulaField expression="Trim(ToString([Violation_Description]))" field="Violation_Description" size="254" type="V_String" enabled="true" />
-            <FormulaField expression="IF IsNull([Violation_Points]) OR IsEmpty([Violation_Points]) THEN 0&#xA;ELSE ToNumber([Violation_Points])&#xA;ENDIF" field="Violation_Points" size="254" type="V_String" enabled="true" />
-            <FormulaField expression="IF IsNull([Violation_Detail]) THEN &quot;&quot; ELSE Trim([Violation_Detail]) ENDIF" field="Violation_Detail" size="254" type="V_String" enabled="true" />
-            <FormulaField expression="IF IsNull([Violation_Memo]) THEN &quot;&quot; ELSE Trim([Violation_Memo]) ENDIF" field="Violation_Memo" size="254" type="V_String" enabled="true" />
+            <FormulaField expression="Trim(ToString([Violation_Description]))" field="Violation_Description" size="100000" type="V_String" enabled="true" />
+            <FormulaField expression="IF IsNull([Violation_Points]) OR IsEmpty([Violation_Points]) THEN 0&#xA;ELSE ToNumber([Violation_Points])&#xA;ENDIF" field="Violation_Points" size="100000" type="V_String" enabled="true" />
+            <FormulaField expression="IF IsNull([Violation_Detail]) THEN &quot;&quot; ELSE Trim([Violation_Detail]) ENDIF" field="Violation_Detail" size="100000" type="V_String" enabled="true" />
+            <FormulaField expression="IF IsNull([Violation_Memo]) THEN &quot;&quot; ELSE Trim([Violation_Memo]) ENDIF" field="Violation_Memo" size="100000" type="V_String" enabled="true" />
             <FormulaField expression="Trim(&#xA;  (IF !IsEmpty([violation_detail]) THEN [violation_detail] + &quot; | &quot; ELSE &quot;&quot; ENDIF) +&#xA;  (IF !IsEmpty([violation_memo]) THEN [violation_memo] ELSE &quot;&quot; ENDIF)&#xA;)" field="violation_comments_clean" size="2000" type="V_String" enabled="true" />
             <FormulaField expression="Contains(Uppercase([violation_description]), &quot;CRITICAL&quot;) OR&#xA;Contains(Uppercase([violation_comments_clean]), &quot;CRITICAL&quot;) OR&#xA;Contains(Uppercase([violation_description]), &quot;PRIORITY&quot;) OR&#xA;Contains(Uppercase([violation_description]), &quot;MAJOR&quot;) OR&#xA;ToNumber([violation_points]) &gt;= 8" field="is_violation_critical" size="1" type="Bool" enabled="true" />
             <FormulaField expression="Contains(Uppercase([violation_description]), &quot;URGENT&quot;) OR&#xA;Contains(Uppercase([violation_comments_clean]), &quot;URGENT&quot;) OR&#xA;Contains(Uppercase([violation_description]), &quot;IMMINENT&quot;) OR&#xA;ToNumber([violation_points]) &gt;= 10" field="is_violation_urgent" size="1" type="Bool" enabled="true" />
@@ -1296,7 +1281,7 @@ vio...</DefaultAnnotationText>
     </Node>
     <Node ToolID="20">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="942" y="174" />
+        <Position x="978" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1316,7 +1301,7 @@ violation_code - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="21">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
-        <Position x="1026" y="174" />
+        <Position x="1062" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1335,11 +1320,11 @@ violation_code - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="22">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1074" y="42" />
+        <Position x="1134" y="90" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MANSIK~1\AppData\Local\Temp\Alteryx\Engine_32728_1df92ffc8cb34135b8ddde9cf758cec2_\Engine_32728_0c5126df3c664e51bf65d51156a3a328~.yxdb</TempFile>
+          <TempFile>C:\Users\MANSIK~1\AppData\Local\Temp\Alteryx\Engine_50152_d6380206deca46dd9dc823b4a9386dd3_\Engine_50152_ce931b5e8e084edda065f88cb6fd2a4e~.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1363,7 +1348,7 @@ violation_code - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="23">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="1278" y="162" />
+        <Position x="1290" y="222" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1392,7 +1377,7 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="25">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="1386" y="162" />
+        <Position x="1398" y="222" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1409,7 +1394,7 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="1494" y="222" />
+        <Position x="1506" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1443,7 +1428,7 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
-        <Position x="1134" y="162" />
+        <Position x="1182" y="150" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1498,17 +1483,17 @@ ENDIF</Expression>
             <Field name="Street Name" size="27" source="CrossTab:Group:First:" type="V_String" />
             <Field name="Street Direction" size="1" source="CrossTab:Group:First:" type="String" />
             <Field name="Street Type" size="4" source="CrossTab:Group:First:" type="String" />
-            <Field name="Street Unit" size="5" source="CrossTab:Group:First:" type="String" />
+            <Field name="Street Unit" size="6" source="CrossTab:Group:First:" type="String" />
             <Field name="Street Address" size="40" source="CrossTab:Group:First:" type="V_String" />
             <Field name="Zip Code" size="10" source="CrossTab:Group:First:" type="String" />
-            <Field name="Inspection Month" size="11" source="CrossTab:Group:First:" type="String" />
+            <Field name="Inspection Month" size="10" source="CrossTab:Group:First:" type="String" />
             <Field name="Inspection Year" size="6" source="CrossTab:Group:First:" type="String" />
-            <Field name="Lat Long Location" size="78" source="CrossTab:Group:First:" type="V_String" />
+            <Field name="Lat Long Location" size="79" source="CrossTab:Group:First:" type="V_String" />
             <Field name="FileName" size="16" source="CrossTab:Group:First:" type="String" />
-            <Field name="violation_number" source="CrossTab:Group:First:" type="Int16" />
-            <Field name="Violation_Description" size="115" source="Formula: Trim(ToString([Violation_Description]))" type="V_String" />
-            <Field name="Violation_Detail" size="1060" source="Formula: IF IsNull([Violation_Detail]) THEN &quot;&quot; ELSE Trim([Violation_Detail]) ENDIF" type="V_String" />
-            <Field name="Violation_Memo" size="1680" source="Formula: IF IsNull([Violation_Memo]) THEN &quot;&quot; ELSE Trim([Violation_Memo]) ENDIF" type="V_String" />
+            <Field name="violation_number" source="Formula: ToNumber(&#xA;  REGEX_Replace([Violation_Description], &quot;\*(\d+)&quot;, &quot;$1&quot;)&#xA;)" type="Int16" />
+            <Field name="Violation_Description" size="117" source="Formula: Trim(ToString([Violation_Description]))" type="V_String" />
+            <Field name="Violation_Detail" size="1040" source="Formula: IF IsNull([Violation_Detail]) THEN &quot;&quot; ELSE Trim([Violation_Detail]) ENDIF" type="V_String" />
+            <Field name="Violation_Memo" size="1701" source="Formula: IF IsNull([Violation_Memo]) THEN &quot;&quot; ELSE Trim([Violation_Memo]) ENDIF" type="V_String" />
             <Field name="Violation_Points" source="Formula: IF IsNull([Violation_Points]) OR IsEmpty([Violation_Points]) THEN 0&#xA;ELSE ToNumber([Violation_Points])&#xA;ENDIF" type="Byte" />
             <Field name="inspection_id" size="32" source="Formula: MD5_UTF8(&#xA;    [Restaurant Name] + &quot;|&quot; + &#xA;    DateTimeFormat([Inspection Date], &quot;%Y-%m-%d&quot;)&#xA;  )" type="String" />
             <Field name="inspection_date_std" source="Formula: DateTimeParse([Inspection Date], &quot;%Y-%m-%d&quot;)" type="Date" />
@@ -1521,7 +1506,7 @@ ENDIF</Expression>
             <Field name="is_violation_critical" source="Formula: Contains(Uppercase([violation_description]), &quot;CRITICAL&quot;) OR&#xA;Contains(Uppercase([violation_comments_clean]), &quot;CRITICAL&quot;) OR&#xA;Contains(Uppercase([violation_description]), &quot;PRIORITY&quot;) OR&#xA;Contains(Uppercase([violation_description]), &quot;MAJOR&quot;) OR&#xA;ToNumber([violation_points]) &gt;= 8" type="Bool" />
             <Field name="is_violation_urgent" source="Formula: Contains(Uppercase([violation_description]), &quot;URGENT&quot;) OR&#xA;Contains(Uppercase([violation_comments_clean]), &quot;URGENT&quot;) OR&#xA;Contains(Uppercase([violation_description]), &quot;IMMINENT&quot;) OR&#xA;ToNumber([violation_points]) &gt;= 10" type="Bool" />
             <Field name="violation_severity" size="8" source="Formula: IF ToNumber([violation_points]) &gt;= 10 THEN &quot;Critical&quot;&#xA;ELSEIF ToNumber([violation_points]) &gt;= 6 THEN &quot;Serious&quot;&#xA;ELSEIF ToNumber([Violation_Points]) &gt;= 3 THEN &quot;Moderate&quot;&#xA;ELSE &quot;Minor&quot;&#xA;ENDIF" type="String" />
-            <Field name="address" size="39" source="Formula: Trim(&#xA;  ToString([Street Number]) + &quot; &quot; +&#xA;  (IF !IsEmpty([Street Name]) THEN [Street Name] + &quot; &quot; ELSE &quot;&quot; ENDIF) +&#xA;  (IF !IsEmpty([Street Direction]) THEN [Street Direction] + &quot; &quot; ELSE &quot;&quot; ENDIF) +&#xA;  (IF !IsEmpty([Street Type]) THEN [Street Type] + &quot; &quot; ELSE &quot;&quot; ENDIF) +&#xA;  (IF !IsEmpty([Street Unit]) THEN [Street Unit] ELSE &quot;&quot; ENDIF)&#xA;)" type="V_String" />
+            <Field name="address" size="37" source="Formula: Trim(&#xA;  ToString([Street Number]) + &quot; &quot; +&#xA;  (IF !IsEmpty([Street Name]) THEN [Street Name] + &quot; &quot; ELSE &quot;&quot; ENDIF) +&#xA;  (IF !IsEmpty([Street Direction]) THEN [Street Direction] + &quot; &quot; ELSE &quot;&quot; ENDIF) +&#xA;  (IF !IsEmpty([Street Type]) THEN [Street Type] + &quot; &quot; ELSE &quot;&quot; ENDIF) +&#xA;  (IF !IsEmpty([Street Unit]) THEN [Street Unit] ELSE &quot;&quot; ENDIF)&#xA;)" type="V_String" />
             <Field name="source_city" size="6" source="Formula: &quot;Dallas&quot;" type="String" />
             <Field name="zip_code" size="10" source="Formula: IF !IsNull([Zip Code]) THEN &#xA;  PadLeft(ToString([Zip Code]), 5, &quot;0&quot;)&#xA;ELSE &#xA;  &quot;&quot;&#xA;ENDIF" type="String" />
             <Field name="license_number" size="39" source="Formula: &quot;DALLAS-&quot; + [inspection_id]" type="String" />
@@ -1536,7 +1521,7 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="1590" y="162" />
+        <Position x="1602" y="222" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -1635,7 +1620,7 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="30">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1698" y="162" />
+        <Position x="1710" y="222" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1656,7 +1641,7 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="31">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1806" y="162" />
+        <Position x="1818" y="222" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1727,11 +1712,11 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="1914" y="162" />
+        <Position x="1938" y="222" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File MaxRecords="" FileFormat="0">C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Dallas.csv</File>
+          <File MaxRecords="" FileFormat="0">C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv</File>
           <Passwords />
           <Disable>False</Disable>
           <FormatSpecificOptions>
@@ -1755,6 +1740,25 @@ ENDIF</Expression>
         </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="642" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ToNumber(&#xA;  REGEX_Replace([Violation_Description], &quot;\*(\d+)&quot;, &quot;$1&quot;)&#xA;)" field="violation_number" size="2" type="Int16" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>violation_number = ToNumber(
+  REGEX_Replace([Violation_Description], "\*(\d+)",...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
     </Node>
   </Nodes>
   <Connections>
@@ -1808,7 +1812,7 @@ ENDIF</Expression>
     </Connection>
     <Connection>
       <Origin ToolID="14" Connection="Output" />
-      <Destination ToolID="18" Connection="Input" />
+      <Destination ToolID="33" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="18" Connection="True" />
@@ -1861,6 +1865,10 @@ ENDIF</Expression>
     <Connection>
       <Origin ToolID="31" Connection="Output" />
       <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>

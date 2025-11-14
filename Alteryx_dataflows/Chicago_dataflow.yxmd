@@ -27,9 +27,6 @@
           <DefaultAnnotationText>Chicago_2021-2022.tsv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Inspection ID" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
@@ -81,9 +78,6 @@
           <DefaultAnnotationText>Chicago_2022-2023.tsv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Inspection ID" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
@@ -135,9 +129,6 @@
           <DefaultAnnotationText>Chicago_2023-2024.tsv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Inspection ID" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
@@ -189,9 +180,6 @@
           <DefaultAnnotationText>Chicago_2024-2025.tsv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Inspection ID" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
@@ -243,9 +231,6 @@
           <DefaultAnnotationText>Chicago_2025-partyear.tsv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Inspection ID" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
@@ -791,22 +776,22 @@ ToString([violation_description]) != ""</Expression>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Inspection ID" source="File: (Multiple Sources)" type="Int32" />
-            <Field name="DBA Name" size="62" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="DBA Name" size="63" source="File: (Multiple Sources)" type="V_String" />
             <Field name="AKA Name" size="62" source="File: (Multiple Sources)" type="V_String" />
             <Field name="License #" source="File: (Multiple Sources)" type="Double" />
-            <Field name="Facility Type" size="42" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Facility Type" size="41" source="File: (Multiple Sources)" type="V_String" />
             <Field name="Risk" size="19" source="File: (Multiple Sources)" type="V_String" />
-            <Field name="Address" size="56" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Address" size="57" source="File: (Multiple Sources)" type="V_String" />
             <Field name="City" size="15" source="File: (Multiple Sources)" type="V_String" />
             <Field name="State" size="2" source="File: (Multiple Sources)" type="String" />
             <Field name="Zip" source="File: (Multiple Sources)" type="Double" />
             <Field name="Inspection Date" source="File: (Multiple Sources)" type="Date" />
-            <Field name="Inspection Type" size="43" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Inspection Type" size="41" source="File: (Multiple Sources)" type="V_String" />
             <Field name="Results" size="22" source="File: (Multiple Sources)" type="V_String" />
-            <Field description="TextToColumns: Parsed from Violations" name="Violations" size="3965" source="TextToColumns: Parsed from Violations" type="V_String" />
+            <Field description="TextToColumns: Parsed from Violations" name="Violations" size="4025" source="TextToColumns: Parsed from Violations" type="V_String" />
             <Field name="Latitude" size="18" source="File: (Multiple Sources)" type="String" />
             <Field name="Longitude" size="18" source="File: (Multiple Sources)" type="String" />
-            <Field name="Location" size="46" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Location" size="45" source="File: (Multiple Sources)" type="String" />
             <Field name="FileName" size="21" source="File: FileName" type="String" />
             <Field name="is_dba_null" source="Formula: IsNull([DBA Name]) OR IsEmpty([DBA Name])" type="Bool" />
             <Field name="is_inspection_date_null" source="Formula: IsNull([Inspection Date]) OR IsEmpty([Inspection Date])" type="Bool" />
@@ -902,7 +887,7 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="1878" y="66" />
+        <Position x="1806" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -923,7 +908,7 @@ ENDIF</Expression>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\MANSIK~1\AppData\Local\Temp\Alteryx\Engine_27528_4fefc2a2f69e463299ccb56245a6abf9_\Engine_27528_40f2937c056445f69e8aa056117eff48~.yxdb</TempFile>
+          <TempFile>C:\Users\MANSIK~1\AppData\Local\Temp\Alteryx\Engine_28116_0fed94f423694ac3b6a1dd833c03811c_\Engine_28116_417aae7e0c8c43db8fec54abd5f69184~.yxdb</TempFile>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -985,71 +970,9 @@ ENDIF</Expression>
       </Properties>
       <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
     </Node>
-    <Node ToolID="45">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="2070" y="126" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <OrderChanged value="False" />
-          <CommaDecimal value="False" />
-          <SelectFields>
-            <SelectField field="Inspection ID" selected="True" />
-            <SelectField field="DBA Name" selected="True" />
-            <SelectField field="AKA Name" selected="True" />
-            <SelectField field="License #" selected="True" />
-            <SelectField field="Facility Type" selected="True" />
-            <SelectField field="Risk" selected="True" />
-            <SelectField field="Address" selected="True" />
-            <SelectField field="City" selected="True" />
-            <SelectField field="State" selected="True" />
-            <SelectField field="Zip" selected="True" />
-            <SelectField field="Inspection Date" selected="True" />
-            <SelectField field="Inspection Type" selected="True" />
-            <SelectField field="Results" selected="True" />
-            <SelectField field="Violations" selected="True" />
-            <SelectField field="Latitude" selected="True" />
-            <SelectField field="Longitude" selected="True" />
-            <SelectField field="Location" selected="True" />
-            <SelectField field="FileName" selected="True" />
-            <SelectField field="is_dba_null" selected="True" />
-            <SelectField field="is_inspection_date_null" selected="True" />
-            <SelectField field="is_results_null" selected="True" />
-            <SelectField field="is_zip_invalid" selected="True" />
-            <SelectField field="is_inspection_id_null" selected="True" />
-            <SelectField field="has_violations" selected="True" />
-            <SelectField field="is_license_null" selected="True" />
-            <SelectField field="is_valid_record" selected="True" />
-            <SelectField field="inspection_date_std" selected="True" />
-            <SelectField field="inspection_year" selected="True" />
-            <SelectField field="inspection_month" selected="True" />
-            <SelectField field="inspection_quarter" selected="True" />
-            <SelectField field="derived_violation_score" selected="True" />
-            <SelectField field="results_std" selected="True" />
-            <SelectField field="has_critical_violation" selected="True" />
-            <SelectField field="has_urgent_violation" selected="True" />
-            <SelectField field="violation_code" selected="True" />
-            <SelectField field="violation_description" selected="True" />
-            <SelectField field="violation_comments" selected="True" />
-            <SelectField field="is_violation_critical" selected="True" />
-            <SelectField field="is_violation_urgent" selected="True" />
-            <SelectField field="violation_severity" selected="True" />
-            <SelectField field="violation_sequence" selected="True" />
-            <SelectField field="total_violations_for_inspection" selected="True" />
-            <SelectField field="*Unknown" selected="False" />
-          </SelectFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-    </Node>
     <Node ToolID="46">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="2070" y="222" />
+        <Position x="2070" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -1148,7 +1071,7 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="47">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="2178" y="222" />
+        <Position x="2178" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1168,7 +1091,7 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="48">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="2274" y="222" />
+        <Position x="2286" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1226,11 +1149,11 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="49">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="2394" y="222" />
+        <Position x="2394" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File MaxRecords="" FileFormat="0">C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv</File>
+          <File MaxRecords="" FileFormat="0">C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv</File>
           <Passwords />
           <Disable>False</Disable>
           <FormatSpecificOptions>
@@ -1368,10 +1291,6 @@ ENDIF</Expression>
     <Connection>
       <Origin ToolID="38" Connection="True" />
       <Destination ToolID="40" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="38" Connection="True" />
-      <Destination ToolID="45" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="38" Connection="True" />
