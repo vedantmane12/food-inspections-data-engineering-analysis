@@ -1,0 +1,1364 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="True" FileFormat="0" OutputFileName="FileName">C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>100000</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Chicago_2021-2022.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Inspection ID" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="DBA Name" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="AKA Name" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="License #" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Facility Type" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Risk" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Address" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="City" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="State" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Zip" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Inspection Date" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Inspection Type" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Results" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Violations" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Latitude" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Longitude" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="Location" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2021-2022.tsv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>100000</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Chicago_2022-2023.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Inspection ID" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="DBA Name" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="AKA Name" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="License #" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Facility Type" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Risk" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Address" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="City" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="State" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Zip" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Inspection Date" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Inspection Type" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Results" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Violations" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Latitude" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Longitude" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="Location" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2022-2023.tsv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>100000</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Chicago_2023-2024.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Inspection ID" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="DBA Name" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="AKA Name" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="License #" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Facility Type" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Risk" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Address" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="City" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="State" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Zip" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Inspection Date" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Inspection Type" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Results" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Violations" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Latitude" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Longitude" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="Location" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2023-2024.tsv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>100000</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Chicago_2024-2025.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Inspection ID" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="DBA Name" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="AKA Name" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="License #" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Facility Type" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Risk" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Address" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="City" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="State" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Zip" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Inspection Date" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Inspection Type" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Results" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Violations" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Latitude" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Longitude" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="Location" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2024-2025.tsv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>100000</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Chicago_2025-partyear.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Inspection ID" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="DBA Name" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="AKA Name" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="License #" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Facility Type" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Risk" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Address" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="City" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="State" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Zip" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Inspection Date" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Inspection Type" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Results" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Violations" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Latitude" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Longitude" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="Location" size="100000" source="File: C:\Users\mansi kamble\Desktop\MIDTERM_DADABI\food-inspections-data-engineering-analysis\Food_Inspections_Data\Chicago_2025-partyear.tsv" type="V_String" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="186" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FieldInfo.FieldInfo">
+        <Position x="294" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFieldInfo" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings>
+        <Position x="294" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">Inspection ID=True,DBA Name=True,AKA Name=True,License #=True,Facility Type=True,Risk=True,Address=True,City=True,State=True,Zip=True,Inspection Date=True,Inspection Type=True,Results=True,Violations=True,Latitude=True,Longitude=True,Location=True,FileName=True</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DataCleansePro.DataCleansePro">
+        <Position x="330" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RemoveNullRows value="True" />
+          <RemoveNullColumns value="True" />
+          <RemoveTabsLineBreaksAndDuplicates value="True" />
+          <RemoveLeadingAndTrailingWhitespace value="True" />
+          <RemoveAllWhitespaces value="False" />
+          <RemoveHTMLTags value="False" />
+          <RemoveInvisibleCharacters value="False" />
+          <Fields>
+            <Field value="Inspection ID" selected="True" />
+            <Field value="DBA Name" selected="True" />
+            <Field value="AKA Name" selected="True" />
+            <Field value="License #" selected="True" />
+            <Field value="Facility Type" selected="True" />
+            <Field value="Risk" selected="True" />
+            <Field value="Address" selected="True" />
+            <Field value="City" selected="True" />
+            <Field value="State" selected="True" />
+            <Field value="Zip" selected="True" />
+            <Field value="Inspection Date" selected="True" />
+            <Field value="Inspection Type" selected="True" />
+            <Field value="Results" selected="True" />
+            <Field value="Violations" selected="True" />
+            <Field value="Latitude" selected="True" />
+            <Field value="Longitude" selected="True" />
+            <Field value="Location" selected="True" />
+            <Field value="FileName" selected="True" />
+            <Field value="*Unknown" selected="True" />
+          </Fields>
+          <RemoveLetters value="False" />
+          <RemoveNumbers value="False" />
+          <RemovePunctuation value="False" />
+          <Letters value="" />
+          <Numbers value="" />
+          <Punctuations value="" />
+          <Exceptions value="" />
+          <Checkbox_ReplaceStringColumns value="False" />
+          <Checkbox_ReplaceNumericColumns value="False" />
+          <radioButton_ReplaceNullwithBlanks value="True" />
+          <radioButton_ReplaceBlankswithNulls value="False" />
+          <radioButton_ReplaceNullwithZero value="True" />
+          <radioButton_ReplaceZerowithNulls value="False" />
+          <ReplaceWithBlanks value="False" />
+          <ReplaceWithZero value="False" />
+          <CheckBox_ModifyCase value="False" />
+          <ModifyCase value="none" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDataCleanse" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="414" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IsNull([DBA Name]) OR IsEmpty([DBA Name])" field="is_dba_null" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="IsNull([Inspection Date]) OR IsEmpty([Inspection Date])" field="is_inspection_date_null" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="IsNull([Results]) OR IsEmpty([Results])" field="is_results_null" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="IsNull([Zip]) OR !REGEX_Match([Zip], &quot;^\d{5}(-\d{4})?$&quot;)" field="is_zip_invalid" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="IsNull([Inspection ID]) OR IsEmpty([Inspection ID])" field="is_inspection_id_null" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="!IsNull([Violations]) AND !IsEmpty([Violations])" field="has_violations" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="IsNull([License #]) OR IsEmpty([License #])" field="is_license_null" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="!is_dba_null AND &#xA;  !is_inspection_date_null AND &#xA;  !is_results_null AND &#xA;  !is_zip_invalid AND&#xA;  !is_inspection_id_null" field="is_valid_record" size="1" type="Bool" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>is_dba_null = IsNull([DBA Name]) OR IsEmpty([DBA Name])
+is_inspection_date_null ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="498" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeParse([Inspection Date], &quot;%Y/%m/%d&quot;)" field="inspection_date_std" size="10" type="Date" enabled="true" />
+            <FormulaField expression="DateTimeYear([inspection_date_std])" field="inspection_year" size="2" type="Int16" enabled="true" />
+            <FormulaField expression="DateTimeMonth([inspection_date_std])" field="inspection_month" size="2" type="Int16" enabled="true" />
+            <FormulaField expression="DateTimeQuarter([inspection_date_std])" field="inspection_quarter" size="2" type="Int16" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>inspection_date_std = DateTimeParse([Inspection Date], "%Y/%m/%d")
+inspection_ye...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="582" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Results] = &quot;Pass&quot; THEN 90&#xA;  ELSEIF [Results] = &quot;Pass w/ Conditions&quot; THEN 80&#xA;  ELSEIF [Results] = &quot;Fail&quot; THEN 70&#xA;  ELSEIF [Results] = &quot;No Entry&quot; THEN 0&#xA;  ELSE Null()&#xA;  ENDIF&#xA;" field="derived_violation_score" size="2" type="Int16" enabled="true" />
+            <FormulaField expression="  IF [Results] = &quot;Pass&quot; THEN &quot;PASS&quot;&#xA;  ELSEIF [Results] = &quot;Pass w/ Conditions&quot; THEN &quot;PASS_CONDITIONS&quot;&#xA;  ELSEIF [Results] = &quot;Fail&quot; THEN &quot;FAIL&quot;&#xA;  ELSEIF [Results] = &quot;No Entry&quot; THEN &quot;NO_ENTRY&quot;&#xA;  ELSEIF [Results] = &quot;Out of Business&quot; THEN &quot;OUT_OF_BUSINESS&quot;&#xA;  ELSEIF [Results] = &quot;Business Not Located&quot; THEN &quot;NOT_LOCATED&quot;&#xA;  ELSE &quot;OTHER&quot;&#xA;  ENDIF" field="results_std" size="64" type="String" enabled="true" />
+            <FormulaField expression="Contains([Violations], &quot;Critical&quot;) OR &#xA;  Contains([Violations], &quot;CRITICAL&quot;) OR&#xA;  Contains([Violations], &quot;Serious&quot;)" field="has_critical_violation" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="  Contains([Violations], &quot;Urgent&quot;) OR &#xA;  Contains([Violations], &quot;URGENT&quot;)" field="has_urgent_violation" size="1" type="Bool" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>derived_violation_score = IF [Results] = "Pass" THEN 90
+  ELSEIF [Results] = "Pa...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="750" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Violations</Field>
+          <RegExExpression value="(\d+)\.\s*([^-]+?)\s*-\s*Comments:\s*(.+?)\s*$" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>Violations</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="violation_code" type="V_String" size="254" />
+            <Field field="violation_description" type="V_String" size="254" />
+            <Field field="violation_comments" type="V_String" size="254" />
+          </ParseComplex>
+          <Match>
+            <Field>Inspection ID_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="666" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Violations</Field>
+          <Delimeters value="|" />
+          <NumFields value="1" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="966" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>Inspection ID</UpdateField_Name>
+          <CreateField_Name>violation_sequence</CreateField_Name>
+          <CreateField_Type>Int16</CreateField_Type>
+          <CreateField_Size>2</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IF [Inspection ID] = [Row-1:Inspection ID] THEN
+  [Row-1:violation_sequence] + 1
+ELSE
+  1
+ENDIF</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF [Inspection ID] = [Row-1:Inspection ID] THEN
+  [Row-1:viol...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1098" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Inspection ID" action="GroupBy" rename="Inspection ID" />
+            <SummarizeField field="DBA Name" action="GroupBy" rename="DBA Name" />
+            <SummarizeField field="License #" action="GroupBy" rename="License #" />
+            <SummarizeField field="Risk" action="GroupBy" rename="Risk" />
+            <SummarizeField field="Address" action="GroupBy" rename="Address" />
+            <SummarizeField field="City" action="GroupBy" rename="City" />
+            <SummarizeField field="State" action="GroupBy" rename="State" />
+            <SummarizeField field="Zip" action="GroupBy" rename="Zip" />
+            <SummarizeField field="Inspection Date" action="GroupBy" rename="Inspection Date" />
+            <SummarizeField field="Inspection Type" action="GroupBy" rename="Inspection Type" />
+            <SummarizeField field="Results" action="GroupBy" rename="Results" />
+            <SummarizeField field="Latitude" action="GroupBy" rename="Latitude" />
+            <SummarizeField field="Longitude" action="GroupBy" rename="Longitude" />
+            <SummarizeField field="inspection_date_std" action="GroupBy" rename="inspection_date_std" />
+            <SummarizeField field="inspection_year" action="GroupBy" rename="inspection_year" />
+            <SummarizeField field="inspection_month" action="GroupBy" rename="inspection_month" />
+            <SummarizeField field="inspection_quarter" action="GroupBy" rename="inspection_quarter" />
+            <SummarizeField field="derived_violation_score" action="GroupBy" rename="derived_violation_score" />
+            <SummarizeField field="results_std" action="GroupBy" rename="results_std" />
+            <SummarizeField field="violation_code" action="GroupBy" rename="total_violation_count" />
+            <SummarizeField field="has_critical_violation" action="Count" rename="critical_violation_count" />
+            <SummarizeField field="has_urgent_violation" action="Count" rename="urgent_violation_count" />
+            <SummarizeField field="violation_code" action="GroupBy" rename="all_violation_code" />
+            <SummarizeField field="violation_description" action="Concat" rename="all_violation_description">
+              <Concat_Start />
+              <Separator>|</Separator>
+              <Concat_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings>
+        <Position x="846" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"violation_code","violation_description","violation_comments"</Value>
+          <Value name="Check Box (84)">False</Value>
+          <Value name="Check Box (117)">False</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1038" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF IsNull([violation_comments]) OR IsEmpty([violation_comments]) &#xA;THEN &quot;&quot; &#xA;ELSE Trim([violation_comments])&#xA;ENDIF" field="violation_comments" size="254" type="V_String" enabled="true" />
+            <FormulaField expression="Contains(Uppercase([violation_description]), &quot;CRITICAL&quot;) OR&#xA;Contains(Uppercase([violation_comments]), &quot;CRITICAL&quot;) OR&#xA;Contains(Uppercase([violation_description]), &quot;PRIORITY FOUNDATION&quot;) OR&#xA;Contains(Uppercase([violation_description]), &quot;SERIOUS&quot;)" field="is_violation_critical" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="Contains(Uppercase([violation_description]), &quot;URGENT&quot;) OR&#xA;Contains(Uppercase([violation_comments]), &quot;URGENT&quot;)" field="is_violation_urgent" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="IF [is_violation_critical] THEN &quot;Critical&quot;&#xA;ELSEIF [is_violation_urgent] THEN &quot;Urgent&quot;&#xA;ELSEIF ToNumber([violation_code]) &gt;= 1 AND ToNumber([violation_code]) &lt;= 14 THEN &quot;Priority Foundation&quot;&#xA;ELSEIF ToNumber([violation_code]) &gt;= 15 AND ToNumber([violation_code]) &lt;= 29 THEN &quot;Core&quot;&#xA;ELSE &quot;General&quot;&#xA;ENDIF" field="violation_severity" size="50" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>violation_comments = IF IsNull([violation_comments]) OR IsEmpty([violation_comme...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1134" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!IsNull([violation_code]) AND
+!IsEmpty([violation_code]) AND
+!IsNull([violation_description]) AND
+!IsEmpty([violation_description]) AND
+ToString([violation_code]) != "" AND
+ToString([violation_description]) != ""</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([violation_code]) AND
+!IsEmpty([violation_code]) AND
+!IsNull([violation_...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1230" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Inspection ID" action="GroupBy" rename="Inspection ID" />
+            <SummarizeField field="violation_code" action="GroupBy" rename="violation_code" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1326" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Inspection ID" />
+            <Field field="violation_code" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Inspection ID" />
+            <Field field="violation_code" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Inspection ID" selected="True" input="Left_" />
+                <SelectField field="Left_DBA Name" selected="True" input="Left_" />
+                <SelectField field="Left_AKA Name" selected="True" input="Left_" />
+                <SelectField field="Left_License #" selected="True" input="Left_" />
+                <SelectField field="Left_Facility Type" selected="True" input="Left_" />
+                <SelectField field="Left_Risk" selected="True" input="Left_" />
+                <SelectField field="Left_Address" selected="True" input="Left_" />
+                <SelectField field="Left_City" selected="True" input="Left_" />
+                <SelectField field="Left_State" selected="True" input="Left_" />
+                <SelectField field="Left_Zip" selected="True" input="Left_" />
+                <SelectField field="Left_Inspection Date" selected="True" input="Left_" />
+                <SelectField field="Left_Inspection Type" selected="True" input="Left_" />
+                <SelectField field="Left_Results" selected="True" input="Left_" />
+                <SelectField field="Left_Violations" selected="True" input="Left_" />
+                <SelectField field="Left_Latitude" selected="True" input="Left_" />
+                <SelectField field="Left_Longitude" selected="True" input="Left_" />
+                <SelectField field="Left_Location" selected="True" input="Left_" />
+                <SelectField field="Left_FileName" selected="True" input="Left_" />
+                <SelectField field="Left_is_dba_null" selected="True" input="Left_" />
+                <SelectField field="Left_is_inspection_date_null" selected="True" input="Left_" />
+                <SelectField field="Left_is_results_null" selected="True" input="Left_" />
+                <SelectField field="Left_is_zip_invalid" selected="True" input="Left_" />
+                <SelectField field="Left_is_inspection_id_null" selected="True" input="Left_" />
+                <SelectField field="Left_has_violations" selected="True" input="Left_" />
+                <SelectField field="Left_is_license_null" selected="True" input="Left_" />
+                <SelectField field="Left_is_valid_record" selected="True" input="Left_" />
+                <SelectField field="Left_inspection_date_std" selected="True" input="Left_" />
+                <SelectField field="Left_inspection_year" selected="True" input="Left_" />
+                <SelectField field="Left_inspection_month" selected="True" input="Left_" />
+                <SelectField field="Left_inspection_quarter" selected="True" input="Left_" />
+                <SelectField field="Left_derived_violation_score" selected="True" input="Left_" />
+                <SelectField field="Left_results_std" selected="True" input="Left_" />
+                <SelectField field="Left_has_critical_violation" selected="True" input="Left_" />
+                <SelectField field="Left_has_urgent_violation" selected="True" input="Left_" />
+                <SelectField field="Left_violation_code" selected="True" input="Left_" />
+                <SelectField field="Left_violation_description" selected="True" input="Left_" />
+                <SelectField field="Left_violation_comments" selected="True" input="Left_" />
+                <SelectField field="Left_is_violation_critical" selected="True" input="Left_" />
+                <SelectField field="Left_is_violation_urgent" selected="True" input="Left_" />
+                <SelectField field="Left_violation_severity" selected="True" input="Left_" />
+                <SelectField field="Right_Inspection ID" selected="False" rename="Right_Inspection ID" input="Right_" />
+                <SelectField field="Right_violation_code" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="942" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Inspection ID" selected="True" />
+            <Field field="DBA Name" selected="True" />
+            <Field field="AKA Name" selected="True" />
+            <Field field="License #" selected="True" />
+            <Field field="Facility Type" selected="True" />
+            <Field field="Risk" selected="True" />
+            <Field field="Address" selected="True" />
+            <Field field="City" selected="True" />
+            <Field field="State" selected="True" />
+            <Field field="Zip" selected="True" />
+            <Field field="Inspection Date" selected="True" />
+            <Field field="Inspection Type" selected="True" />
+            <Field field="Results" selected="True" />
+            <Field field="Violations" selected="True" />
+            <Field field="Latitude" selected="True" />
+            <Field field="Longitude" selected="True" />
+            <Field field="Location" selected="True" />
+            <Field field="FileName" selected="True" />
+            <Field field="results_std" selected="True" />
+            <Field field="violation_code" selected="True" />
+            <Field field="violation_description" selected="True" />
+            <Field field="violation_comments" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Inspection ID" source="File: (Multiple Sources)" type="Int32" />
+            <Field name="DBA Name" size="63" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="AKA Name" size="62" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="License #" source="File: (Multiple Sources)" type="Double" />
+            <Field name="Facility Type" size="41" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Risk" size="19" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Address" size="57" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="City" size="15" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="State" size="2" source="File: (Multiple Sources)" type="String" />
+            <Field name="Zip" source="File: (Multiple Sources)" type="Double" />
+            <Field name="Inspection Date" source="File: (Multiple Sources)" type="Date" />
+            <Field name="Inspection Type" size="41" source="File: (Multiple Sources)" type="V_String" />
+            <Field name="Results" size="22" source="File: (Multiple Sources)" type="V_String" />
+            <Field description="TextToColumns: Parsed from Violations" name="Violations" size="4025" source="TextToColumns: Parsed from Violations" type="V_String" />
+            <Field name="Latitude" size="18" source="File: (Multiple Sources)" type="String" />
+            <Field name="Longitude" size="18" source="File: (Multiple Sources)" type="String" />
+            <Field name="Location" size="45" source="File: (Multiple Sources)" type="String" />
+            <Field name="FileName" size="21" source="File: FileName" type="String" />
+            <Field name="is_dba_null" source="Formula: IsNull([DBA Name]) OR IsEmpty([DBA Name])" type="Bool" />
+            <Field name="is_inspection_date_null" source="Formula: IsNull([Inspection Date]) OR IsEmpty([Inspection Date])" type="Bool" />
+            <Field name="is_results_null" source="Formula: IsNull([Results]) OR IsEmpty([Results])" type="Bool" />
+            <Field name="is_zip_invalid" source="Formula: IsNull([Zip]) OR !REGEX_Match([Zip], &quot;^\d{5}(-\d{4})?$&quot;)" type="Bool" />
+            <Field name="is_inspection_id_null" source="Formula: IsNull([Inspection ID]) OR IsEmpty([Inspection ID])" type="Bool" />
+            <Field name="has_violations" source="Formula: !IsNull([Violations]) AND !IsEmpty([Violations])" type="Bool" />
+            <Field name="is_license_null" source="Formula: IsNull([License #]) OR IsEmpty([License #])" type="Bool" />
+            <Field name="is_valid_record" source="Formula: !is_dba_null AND &#xA;  !is_inspection_date_null AND &#xA;  !is_results_null AND &#xA;  !is_zip_invalid AND&#xA;  !is_inspection_id_null" type="Bool" />
+            <Field name="inspection_date_std" source="Formula: DateTimeParse([Inspection Date], &quot;%Y/%m/%d&quot;)" type="Date" />
+            <Field name="inspection_year" source="Formula: DateTimeYear([inspection_date_std])" type="Int16" />
+            <Field name="inspection_month" source="Formula: DateTimeMonth([inspection_date_std])" type="Int16" />
+            <Field name="inspection_quarter" source="Formula: DateTimeQuarter([inspection_date_std])" type="Int16" />
+            <Field name="derived_violation_score" source="Formula: IF [Results] = &quot;Pass&quot; THEN 90&#xA;  ELSEIF [Results] = &quot;Pass w/ Conditions&quot; THEN 80&#xA;  ELSEIF [Results] = &quot;Fail&quot; THEN 70&#xA;  ELSEIF [Results] = &quot;No Entry&quot; THEN 0&#xA;  ELSE Null()&#xA;  ENDIF&#xA;" type="Int16" />
+            <Field name="results_std" size="15" source="Formula:   IF [Results] = &quot;Pass&quot; THEN &quot;PASS&quot;&#xA;  ELSEIF [Results] = &quot;Pass w/ Conditions&quot; THEN &quot;PASS_CONDITIONS&quot;&#xA;  ELSEIF [Results] = &quot;Fail&quot; THEN &quot;FAIL&quot;&#xA;  ELSEIF [Results] = &quot;No Entry&quot; THEN &quot;NO_ENTRY&quot;&#xA;  ELSEIF [Results] = &quot;Out of Business&quot; THEN &quot;OUT_OF_BUSINESS&quot;&#xA;  ELSEIF [Results] = &quot;Business Not Located&quot; THEN &quot;NOT_LOCATED&quot;&#xA;  ELSE &quot;OTHER&quot;&#xA;  ENDIF" type="V_String" />
+            <Field name="has_critical_violation" source="Formula: Contains([Violations], &quot;Critical&quot;) OR &#xA;  Contains([Violations], &quot;CRITICAL&quot;) OR&#xA;  Contains([Violations], &quot;Serious&quot;)" type="Bool" />
+            <Field name="has_urgent_violation" source="Formula:   Contains([Violations], &quot;Urgent&quot;) OR &#xA;  Contains([Violations], &quot;URGENT&quot;)" type="Bool" />
+            <Field description="RegEx: Parsed from Violations" name="violation_code" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="Byte" />
+            <Field description="RegEx: Parsed from Violations" name="violation_description" size="93" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_String" />
+            <Field description="RegEx: Parsed from Violations" name="violation_comments" size="254" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1422" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Inspection ID" />
+            <Field field="violation_code" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1530" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Inspection ID" order="Ascending" />
+            <Field field="violation_code" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Inspection ID - Ascending
+violation_code - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="1662" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>Inspection ID</UpdateField_Name>
+          <CreateField_Name>violation_sequence</CreateField_Name>
+          <CreateField_Type>Int16</CreateField_Type>
+          <CreateField_Size>2</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IF [Inspection ID] = [Row-1:Inspection ID] THEN
+  [Row-1:violation_sequence] + 1
+ELSE
+  1
+ENDIF</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF [Inspection ID] = [Row-1:Inspection ID] THEN
+  [Row-1:viol...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1806" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[violation_sequence] &gt;= 1</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[violation_sequence] &gt;= 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1962" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\MANSIK~1\AppData\Local\Temp\Alteryx\Engine_28116_0fed94f423694ac3b6a1dd833c03811c_\Engine_28116_417aae7e0c8c43db8fec54abd5f69184~.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1950" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Inspection ID" action="GroupBy" rename="Inspection ID" />
+            <SummarizeField field="DBA Name" action="GroupBy" rename="DBA Name" />
+            <SummarizeField field="AKA Name" action="GroupBy" rename="AKA Name" />
+            <SummarizeField field="License #" action="GroupBy" rename="License #" />
+            <SummarizeField field="Facility Type" action="GroupBy" rename="Facility Type" />
+            <SummarizeField field="Risk" action="GroupBy" rename="Risk" />
+            <SummarizeField field="Address" action="GroupBy" rename="Address" />
+            <SummarizeField field="City" action="GroupBy" rename="City" />
+            <SummarizeField field="State" action="GroupBy" rename="State" />
+            <SummarizeField field="Zip" action="GroupBy" rename="Zip" />
+            <SummarizeField field="Inspection Date" action="GroupBy" rename="Inspection Date" />
+            <SummarizeField field="Inspection Type" action="GroupBy" rename="Inspection Type" />
+            <SummarizeField field="Results" action="GroupBy" rename="Results" />
+            <SummarizeField field="Latitude" action="GroupBy" rename="Latitude" />
+            <SummarizeField field="Longitude" action="GroupBy" rename="Longitude" />
+            <SummarizeField field="inspection_date_std" action="GroupBy" rename="inspection_date_std" />
+            <SummarizeField field="inspection_year" action="GroupBy" rename="inspection_year" />
+            <SummarizeField field="inspection_month" action="GroupBy" rename="inspection_month" />
+            <SummarizeField field="inspection_quarter" action="GroupBy" rename="inspection_quarter" />
+            <SummarizeField field="derived_violation_score" action="GroupBy" rename="derived_violation_score" />
+            <SummarizeField field="results_std" action="GroupBy" rename="results_std" />
+            <SummarizeField field="violation_code" action="Count" rename="violation_count" />
+            <SummarizeField field="violation_code" action="Concat" rename="all_violation_codes">
+              <Concat_Start />
+              <Separator>|</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="is_violation_critical" action="Max" rename="critical_violation" />
+            <SummarizeField field="is_violation_urgent" action="Max" rename="urgent_violation" />
+            <SummarizeField field="violation_description" action="Concat" rename="all_violation_descriptions">
+              <Concat_Start />
+              <Separator>|</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="violation_sequence" action="Max" rename="total_violations" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="2070" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Inspection ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Inspection ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Inspection ID" selected="True" input="Left_" />
+                <SelectField field="Left_DBA Name" selected="True" input="Left_" />
+                <SelectField field="Left_AKA Name" selected="True" input="Left_" />
+                <SelectField field="Left_License #" selected="True" input="Left_" />
+                <SelectField field="Left_Facility Type" selected="True" input="Left_" />
+                <SelectField field="Left_Risk" selected="True" input="Left_" />
+                <SelectField field="Left_Address" selected="True" input="Left_" />
+                <SelectField field="Left_City" selected="True" input="Left_" />
+                <SelectField field="Left_State" selected="True" input="Left_" />
+                <SelectField field="Left_Zip" selected="True" input="Left_" />
+                <SelectField field="Left_Inspection Date" selected="True" input="Left_" />
+                <SelectField field="Left_Inspection Type" selected="True" input="Left_" />
+                <SelectField field="Left_Results" selected="True" input="Left_" />
+                <SelectField field="Left_Violations" selected="True" input="Left_" />
+                <SelectField field="Left_Latitude" selected="True" input="Left_" />
+                <SelectField field="Left_Longitude" selected="True" input="Left_" />
+                <SelectField field="Left_Location" selected="True" input="Left_" />
+                <SelectField field="Left_FileName" selected="True" input="Left_" />
+                <SelectField field="Left_is_dba_null" selected="True" input="Left_" />
+                <SelectField field="Left_is_inspection_date_null" selected="True" input="Left_" />
+                <SelectField field="Left_is_results_null" selected="True" input="Left_" />
+                <SelectField field="Left_is_zip_invalid" selected="True" input="Left_" />
+                <SelectField field="Left_is_inspection_id_null" selected="True" input="Left_" />
+                <SelectField field="Left_has_violations" selected="True" input="Left_" />
+                <SelectField field="Left_is_license_null" selected="True" input="Left_" />
+                <SelectField field="Left_is_valid_record" selected="True" input="Left_" />
+                <SelectField field="Left_inspection_date_std" selected="True" input="Left_" />
+                <SelectField field="Left_inspection_year" selected="True" input="Left_" />
+                <SelectField field="Left_inspection_month" selected="True" input="Left_" />
+                <SelectField field="Left_inspection_quarter" selected="True" input="Left_" />
+                <SelectField field="Left_derived_violation_score" selected="True" input="Left_" />
+                <SelectField field="Left_results_std" selected="True" input="Left_" />
+                <SelectField field="Left_has_critical_violation" selected="True" input="Left_" />
+                <SelectField field="Left_has_urgent_violation" selected="True" input="Left_" />
+                <SelectField field="Left_violation_code" selected="True" input="Left_" />
+                <SelectField field="Left_violation_description" selected="True" input="Left_" />
+                <SelectField field="Left_violation_comments" selected="True" input="Left_" />
+                <SelectField field="Left_is_violation_critical" selected="True" input="Left_" />
+                <SelectField field="Left_is_violation_urgent" selected="True" input="Left_" />
+                <SelectField field="Left_violation_severity" selected="True" input="Left_" />
+                <SelectField field="Left_violation_sequence" selected="True" input="Left_" />
+                <SelectField field="Right_Inspection ID" selected="False" rename="Right_Inspection ID" input="Right_" />
+                <SelectField field="Right_DBA Name" selected="False" rename="Right_DBA Name" input="Right_" />
+                <SelectField field="Right_AKA Name" selected="False" rename="Right_AKA Name" input="Right_" />
+                <SelectField field="Right_License #" selected="False" rename="Right_License #" input="Right_" />
+                <SelectField field="Right_Facility Type" selected="False" rename="Right_Facility Type" input="Right_" />
+                <SelectField field="Right_Risk" selected="False" rename="Right_Risk" input="Right_" />
+                <SelectField field="Right_Address" selected="False" rename="Right_Address" input="Right_" />
+                <SelectField field="Right_City" selected="False" rename="Right_City" input="Right_" />
+                <SelectField field="Right_State" selected="False" rename="Right_State" input="Right_" />
+                <SelectField field="Right_Zip" selected="False" rename="Right_Zip" input="Right_" />
+                <SelectField field="Right_Inspection Date" selected="False" rename="Right_Inspection Date" input="Right_" />
+                <SelectField field="Right_Inspection Type" selected="False" rename="Right_Inspection Type" input="Right_" />
+                <SelectField field="Right_Results" selected="False" rename="Right_Results" input="Right_" />
+                <SelectField field="Right_Latitude" selected="False" rename="Right_Latitude" input="Right_" />
+                <SelectField field="Right_Longitude" selected="False" rename="Right_Longitude" input="Right_" />
+                <SelectField field="Right_inspection_date_std" selected="False" rename="Right_inspection_date_std" input="Right_" />
+                <SelectField field="Right_inspection_year" selected="False" rename="Right_inspection_year" input="Right_" />
+                <SelectField field="Right_inspection_month" selected="False" rename="Right_inspection_month" input="Right_" />
+                <SelectField field="Right_inspection_quarter" selected="False" rename="Right_inspection_quarter" input="Right_" />
+                <SelectField field="Right_derived_violation_score" selected="False" rename="Right_derived_violation_score" input="Right_" />
+                <SelectField field="Right_results_std" selected="False" rename="Right_results_std" input="Right_" />
+                <SelectField field="Right_violation_count" selected="True" input="Right_" />
+                <SelectField field="Right_all_violation_codes" selected="True" input="Right_" />
+                <SelectField field="Right_critical_violation" selected="True" input="Right_" />
+                <SelectField field="Right_urgent_violation" selected="True" input="Right_" />
+                <SelectField field="Right_all_violation_descriptions" selected="True" input="Right_" />
+                <SelectField field="Right_total_violations" selected="True" input="Right_" />
+                <SelectField field="Left_total_violations_for_inspection" selected="True" input="Left_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2178" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[derived_violation_score] &gt;= 90 AND [violation_count] &gt; 3" field="high_score_many_violations" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="[results_std] = &quot;PASS&quot; AND [critical_violation] = &quot;True&quot;" field="pass_with_critical" size="1" type="Bool" enabled="true" />
+            <FormulaField expression="&quot;Chicago&quot;" field="source_city" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>high_score_many_violations = [derived_violation_score] &gt;= 90 AND [violation_coun...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2286" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Inspection ID" selected="True" rename="inspection_id" />
+            <SelectField field="DBA Name" selected="True" rename="dba_name" />
+            <SelectField field="AKA Name" selected="True" rename="aka_name" />
+            <SelectField field="License #" selected="True" rename="license_number" />
+            <SelectField field="Facility Type" selected="True" rename="facility_type" />
+            <SelectField field="Risk" selected="True" rename="risk_category" />
+            <SelectField field="Address" selected="True" rename="address" />
+            <SelectField field="City" selected="True" rename="city" />
+            <SelectField field="State" selected="True" rename="state" />
+            <SelectField field="Zip" selected="True" rename="zipcode" />
+            <SelectField field="Inspection Date" selected="True" rename="inspection_date" />
+            <SelectField field="Inspection Type" selected="True" rename="inspection_type" />
+            <SelectField field="Results" selected="True" rename="results" />
+            <SelectField field="Latitude" selected="True" rename="latitude" />
+            <SelectField field="Longitude" selected="True" rename="longitude" />
+            <SelectField field="Location" selected="True" rename="location" />
+            <SelectField field="FileName" selected="True" rename="filename" />
+            <SelectField field="inspection_year" selected="True" />
+            <SelectField field="inspection_month" selected="True" />
+            <SelectField field="inspection_quarter" selected="True" />
+            <SelectField field="derived_violation_score" selected="True" />
+            <SelectField field="results_std" selected="True" />
+            <SelectField field="violation_code" selected="True" />
+            <SelectField field="violation_description" selected="True" />
+            <SelectField field="violation_comments" selected="True" />
+            <SelectField field="is_violation_critical" selected="True" />
+            <SelectField field="is_violation_urgent" selected="True" />
+            <SelectField field="violation_severity" selected="True" />
+            <SelectField field="violation_sequence" selected="True" />
+            <SelectField field="violation_count" selected="True" />
+            <SelectField field="all_violation_codes" selected="True" />
+            <SelectField field="critical_violation" selected="True" />
+            <SelectField field="urgent_violation" selected="True" />
+            <SelectField field="all_violation_descriptions" selected="True" />
+            <SelectField field="total_violations" selected="True" />
+            <SelectField field="pass_with_critical" selected="True" />
+            <SelectField field="source_city" selected="True" />
+            <SelectField field="total_violations_for_inspection" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="2394" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+            <SuppressBlankFile>False</SuppressBlankFile>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Chicago.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#1">
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#5">
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="10" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="21" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output26" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output26" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="True" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="True" />
+      <Destination ToolID="27" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="27" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Join" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Unique" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="True" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="True" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="True" />
+      <Destination ToolID="46" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="46" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Join" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Chicago_dataflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="ef5e8cec-22b8-4672-80ea-675a4ad20bd4" />
+      <Telemetry>
+        <PreviousWorkflowId value="264a2d41-689a-4661-bc6b-da44725869a0" />
+        <OriginWorkflowId value="40586b18-755a-4b1a-a073-04e58653e063" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

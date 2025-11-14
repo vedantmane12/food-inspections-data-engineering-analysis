@@ -1,0 +1,498 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>100000</FieldLen>
+            <SingleThreadRead>True</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Chicago.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="inspection_id" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="dba_name" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="aka_name" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="license_number" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="facility_type" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="risk_category" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="address" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="city" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="state" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="zipcode" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="inspection_date" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="inspection_type" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="results" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="latitude" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="longitude" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="location" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="filename" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="inspection_year" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="inspection_month" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="inspection_quarter" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="derived_violation_score" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="results_std" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="violation_code" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="violation_description" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="violation_comments" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="is_violation_critical" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="is_violation_urgent" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="violation_severity" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="violation_sequence" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="violation_count" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="all_violation_codes" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="critical_violation" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="urgent_violation" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="all_violation_descriptions" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="total_violations" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="pass_with_critical" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="source_city" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Chicago.csv" type="V_String" />
+            <Field name="FileName2" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>100000</FieldLen>
+            <SingleThreadRead>True</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Dallas.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="inspection_id" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="dba_name" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="aka_name" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="license_number" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="facility_type" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="risk_category" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="address" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="City" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="State" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="zip_code" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="inspection_type" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="results_std" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="Inspection Score" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="Lat Long Location" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="filename" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="Violation_Description" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="Violation_Points" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="inspection_date_std" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="inspection_year" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="inspection_month" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="violation_code" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="inspection_quarter" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="violation_comments_clean" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="is_violation_critical" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="is_violation_urgent" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="violation_severity" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="source_city" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="violation_sequence" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="violation_count" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="critical_violation" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="urgent_violation" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="total_violation_points" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="all_violation_codes" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="all_violation_descriptions" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" />
+            <Field name="FileName2" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\MANSIK~1\AppData\Local\Temp\Alteryx\Engine_51948_ac3bbf7b3f0a47d8aace41b9d91a4b68_\Engine_51948_f8fe582d52c64ac4bfc586f88ede3f75~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="150" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\MANSIK~1\AppData\Local\Temp\Alteryx\Engine_51948_ac3bbf7b3f0a47d8aace41b9d91a4b68_\Engine_51948_61b09c3fe5f441bd9b3a0b5a00c82228~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="162" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="zipcode" selected="True" rename="zip_code" />
+            <SelectField field="results" selected="False" />
+            <SelectField field="filename" selected="True" rename="source_filename" />
+            <SelectField field="derived_violation_score" selected="True" rename="violation_score" />
+            <SelectField field="violation_comments" selected="True" rename="violation_comments_original" />
+            <SelectField field="total_violations" selected="False" />
+            <SelectField field="pass_with_critical" selected="False" />
+            <SelectField field="FileName2" selected="True" rename="filename" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="282" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="City" selected="True" rename="city" />
+            <SelectField field="State" selected="True" rename="state" />
+            <SelectField field="Inspection Score" selected="True" rename="violation_score" />
+            <SelectField field="Lat Long Location" selected="False" rename="lat_long_location" />
+            <SelectField field="filename" selected="True" rename="source_filename" />
+            <SelectField field="Violation_Description" selected="True" rename="violation_description" />
+            <SelectField field="Violation_Points" selected="False" rename="violation_points" />
+            <SelectField field="inspection_date_std" selected="True" rename="inspection_date" />
+            <SelectField field="violation_comments_clean" selected="True" rename="violation_comments_original" />
+            <SelectField field="total_violation_points" selected="False" />
+            <SelectField field="FileName2" selected="True" rename="filename" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="162" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF !IsNull([Lat Long Location]) AND !IsEmpty([Lat Long Location]) AND Contains([Lat Long Location], &quot;(&quot;) AND Contains([Lat Long Location], &quot;,&quot;) THEN&#xA;  Trim(REGEX_Replace([Lat Long Location], &quot;^.*\(([\-\d\.]+)\s*,.*$&quot;, &quot;$1&quot;))&#xA;ELSE&#xA;  &quot;&quot;&#xA;ENDIF" field="latitude" size="100" type="V_String" enabled="true" />
+            <FormulaField expression="IF !IsNull([Lat Long Location]) AND !IsEmpty([Lat Long Location]) AND Contains([Lat Long Location], &quot;(&quot;) AND Contains([Lat Long Location], &quot;,&quot;) AND Contains([Lat Long Location], &quot;)&quot;) THEN&#xA;  Trim(REGEX_Replace([Lat Long Location], &quot;^[^\(]*\([^\,]*,\s*([\-\d\.]+)[\)\s].*$&quot;, &quot;$1&quot;))&#xA;ELSE&#xA;  &quot;&quot;&#xA;ENDIF" field="longitude" size="100" type="V_String" enabled="true" />
+            <FormulaField expression="IF !IsNull([latitude]) AND !IsEmpty([latitude]) AND !IsNull([longitude]) AND !IsEmpty([longitude]) THEN&#xA;  &quot;(&quot; + [latitude] + &quot;, &quot; + [longitude] + &quot;)&quot;&#xA;ELSE&#xA;  &quot;&quot;&#xA;ENDIF" field="location" size="200" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>latitude = IF !IsNull([Lat Long Location]) AND !IsEmpty([Lat Long Location]) AND...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="450" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="chicago">
+              <RecordInfo>
+                <Field name="inspection_id" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="1" />
+                <Field name="dba_name" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="2" />
+                <Field name="aka_name" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="3" />
+                <Field name="license_number" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="4" />
+                <Field name="facility_type" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="5" />
+                <Field name="risk_category" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="6" />
+                <Field name="address" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="7" />
+                <Field name="city" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="8" />
+                <Field name="state" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="9" />
+                <Field name="zip_code" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="10" />
+                <Field name="inspection_date" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="11" />
+                <Field name="inspection_type" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="12" />
+                <Field name="latitude" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="13" />
+                <Field name="longitude" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="14" />
+                <Field name="location" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="15" />
+                <Field name="source_filename" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="16" />
+                <Field name="inspection_year" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="17" />
+                <Field name="inspection_month" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="18" />
+                <Field name="inspection_quarter" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="19" />
+                <Field name="violation_score" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="20" />
+                <Field name="results_std" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="21" />
+                <Field name="violation_code" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="22" />
+                <Field name="violation_description" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="23" />
+                <Field name="violation_comments_original" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="24" />
+                <Field name="is_violation_critical" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="25" />
+                <Field name="is_violation_urgent" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="26" />
+                <Field name="violation_severity" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="27" />
+                <Field name="violation_sequence" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="28" />
+                <Field name="violation_count" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="29" />
+                <Field name="all_violation_codes" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="30" />
+                <Field name="critical_violation" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="31" />
+                <Field name="urgent_violation" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="32" />
+                <Field name="all_violation_descriptions" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="33" />
+                <Field name="source_city" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\Alteryx_Data\Chicago.csv" type="V_String" column="34" />
+                <Field name="filename" size="254" source="File: FileName" type="V_WString" column="35" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="dallas">
+              <RecordInfo>
+                <Field name="inspection_id" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="1" />
+                <Field name="dba_name" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="2" />
+                <Field name="aka_name" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="3" />
+                <Field name="license_number" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="4" />
+                <Field name="facility_type" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="5" />
+                <Field name="risk_category" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="6" />
+                <Field name="address" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="7" />
+                <Field name="city" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="8" />
+                <Field name="state" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="9" />
+                <Field name="zip_code" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="10" />
+                <Field name="inspection_date" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="11" />
+                <Field name="inspection_type" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="12" />
+                <Field name="latitude" size="100" source="Formula: IF !IsNull([Lat Long Location]) AND !IsEmpty([Lat Long Location]) AND Contains([Lat Long Location], &quot;(&quot;) AND Contains([Lat Long Location], &quot;,&quot;) THEN&#xA;  Trim(REGEX_Replace([Lat Long Location], &quot;^.*\(([\-\d\.]+)\s*,.*$&quot;, &quot;$1&quot;))&#xA;ELSE&#xA;  &quot;&quot;&#xA;ENDIF" type="V_String" column="13" />
+                <Field name="longitude" size="100" source="Formula: IF !IsNull([Lat Long Location]) AND !IsEmpty([Lat Long Location]) AND Contains([Lat Long Location], &quot;(&quot;) AND Contains([Lat Long Location], &quot;,&quot;) AND Contains([Lat Long Location], &quot;)&quot;) THEN&#xA;  Trim(REGEX_Replace([Lat Long Location], &quot;^[^\(]*\([^\,]*,\s*([\-\d\.]+)[\)\s].*$&quot;, &quot;$1&quot;))&#xA;ELSE&#xA;  &quot;&quot;&#xA;ENDIF" type="V_String" column="14" />
+                <Field name="location" size="200" source="Formula: IF !IsNull([latitude]) AND !IsEmpty([latitude]) AND !IsNull([longitude]) AND !IsEmpty([longitude]) THEN&#xA;  &quot;(&quot; + [latitude] + &quot;, &quot; + [longitude] + &quot;)&quot;&#xA;ELSE&#xA;  &quot;&quot;&#xA;ENDIF" type="V_String" column="15" />
+                <Field name="source_filename" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="16" />
+                <Field name="inspection_year" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="17" />
+                <Field name="inspection_month" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="18" />
+                <Field name="inspection_quarter" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="19" />
+                <Field name="violation_score" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="20" />
+                <Field name="results_std" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="21" />
+                <Field name="violation_code" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="22" />
+                <Field name="violation_description" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="23" />
+                <Field name="violation_comments_original" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="24" />
+                <Field name="is_violation_critical" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="25" />
+                <Field name="is_violation_urgent" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="26" />
+                <Field name="violation_severity" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="27" />
+                <Field name="violation_sequence" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="28" />
+                <Field name="violation_count" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="29" />
+                <Field name="all_violation_codes" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="30" />
+                <Field name="critical_violation" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="31" />
+                <Field name="urgent_violation" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="32" />
+                <Field name="all_violation_descriptions" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="33" />
+                <Field name="source_city" size="100000" source="File: C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\Dallas.csv" type="V_String" column="34" />
+                <Field name="filename" size="254" source="File: FileName" type="V_WString" column="35" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="594" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\mansii.k\DADABI_MIDTERM\food-inspections-data-engineering-analysis\data\food_inspections.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+            <SuppressBlankFile>False</SuppressBlankFile>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>food_inspections.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection name="chicago">
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection name="dallas">
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>food_inspections_unified</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="245ae433-224d-480c-b03c-cfc3e3604b34" />
+      <Telemetry>
+        <PreviousWorkflowId value="c14fc8c7-4578-4c4f-8910-91a0a32d5c8e" />
+        <OriginWorkflowId value="b782f0da-c02d-40c7-82ec-41d40567200d" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
